@@ -108,7 +108,7 @@ void SleepMode();
 void SlaveGoSleep(uint8);
 void KEY_Clean();
 void SlaveReset();
-
+void Key_Free();
 
 uint32 CapSense_IsWidgetActive_bit(uint32 widgetId);
 

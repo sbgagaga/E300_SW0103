@@ -108,6 +108,7 @@ void MechKeyPro(uint8,uint16 *,uint8 *,uint8 *,uint8);
 void MasterOrder();
 uint32 CapSense_IsWidgetActive_bit(uint32 widgetId);
 void KEY_Clean();
+void Key_Free();
 
     
 #endif

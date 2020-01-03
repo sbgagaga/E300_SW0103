@@ -56,6 +56,12 @@ void Apply()
             varPowerUpCount=0;
             CapSense_1_InitializeAllBaselines();
         }
+        if(flagSystemON)
+        {
+            TouchKeyScan();
+            MechKeyScan();
+            Key_Free();
+        }
     }
 
     if(DEF_TICK_5mS == 1)
@@ -77,19 +83,12 @@ void Apply()
     if(DEF_TICK_20mS == 1)
     {
         DEF_TICK_20mS = 0;
-        //TouchKeyScan();
-        //MechKeyScan();
         I2C_Date_Pro();
     }
 
     if(DEF_TICK_50mS == 1)
     {
         DEF_TICK_50mS = 0;
-        if(flagSystemON)
-        {
-            TouchKeyScan();
-            MechKeyScan();
-        }
     }
 
     if(DEF_TICK_100mS == 1)
@@ -130,9 +129,9 @@ void TouchKeyScan()
         if(touch_key.Date!=0&&touch_key.Date==TouchKeyBuf&&!TouchKeyLock)
         {
             TouchKeyCount++;
-            if(TouchKeyCount>=2)
+            if(TouchKeyCount>=25)
             {
-                TouchKeyCount=2;
+                TouchKeyCount=25;
                 for(uint8 index=0,mask=0x01; mask!=0x40; mask<<=1,index++)
                 {
                     if(mask&touch_key.Date)
@@ -146,9 +145,9 @@ void TouchKeyScan()
         else if(touch_key.Date!=0&&touch_key.Date==TouchKeyBuf&&TouchKeyLock)
         {
             TouchKeyCount++;
-            if(TouchKeyCount>=400)
+            if(TouchKeyCount>=10000)
             {
-                TouchKeyCount=400;
+                TouchKeyCount=10000;
                 for(int8 i=0;i<6;i++)
                 {
                     if(touch_lin.Date[i]==2)
@@ -185,20 +184,6 @@ void TouchKeyScan()
             }
             TouchKeyCount=0;
         }
-        for(int i=0;i<6;i++)
-        {
-            if(TouchKey_State[i][0]==1)
-            {
-                TouchKey_State[i][1]++;
-                if(TouchKey_State[i][1]>3)
-                {
-                    TouchKey_State[i][0]=0;
-                    TouchKey_State[i][1]=0;
-                    touch_lin.Date[i]=no_press;
-                    TouchKeyLock=0;
-                }
-            }
-        }
         TouchKeyBuf=touch_key.Date;
         CapSense_1_ScanAllWidgets();    //扫描所有的传感器
     }
@@ -233,25 +218,6 @@ void MechKeyScan()
     MechKeyPro(VolPlus,&VolPlus_cnt,&VolPlus_lock,&mech_lin.Lin.VolPlus,0);
     MechKeyPro(Mute,&Mute_cnt,&Mute_lock,&mech_lin.Lin.Mute,1);
     MechKeyPro(VolReduce,&VolReduce_cnt,&VolReduce_lock,&mech_lin.Lin.VolReduce,2);
-    for(int i=0;i<3;i++)
-    {
-        if(MechKey_State[i][0]==1)
-        {
-            MechKey_State[i][1]++;
-            if(MechKey_State[i][1]>3)
-            {
-                MechKey_State[i][0]=0;
-                MechKey_State[i][1]=0;
-                mech_lin.Date[i]=no_press;
-                switch(i)
-                {
-                    case 0:VolPlus_lock=0;break;
-                    case 1:Mute_lock=0;break;
-                    case 2:VolReduce_lock=0;break;
-                }
-            }
-        }
-    }
 }
 
 void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 index)
@@ -259,7 +225,7 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
     if(KeyType==0&&!*KeyLock)
     {
         (*KeyCnt)++;
-        if(*KeyCnt>=2)
+        if(*KeyCnt>=25)
         {
             *KeyLock=1;
             *KeyLIN=short_press;
@@ -268,9 +234,9 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
     else if(KeyType==0&&*KeyLock)
     {
         (*KeyCnt)++;
-        if(*KeyCnt>=400)
+        if(*KeyCnt>=10000)
         {
-            *KeyCnt=400;
+            *KeyCnt=10000;
             *KeyLIN=error;
         }
     }
@@ -324,6 +290,43 @@ uint8 KeyNumCheck()
         return 1;
     }
     return 0;
+}
+
+void Key_Free()
+{
+    for(int i=0;i<6;i++)
+    {
+        if(TouchKey_State[i][0]==1)
+        {
+            TouchKey_State[i][1]++;
+            if(TouchKey_State[i][1]>75)
+            {
+                TouchKey_State[i][0]=0;
+                TouchKey_State[i][1]=0;
+                touch_lin.Date[i]=no_press;
+                TouchKeyLock=0;
+            }
+        }
+    }
+    for(int i=0;i<3;i++)
+    {
+        if(MechKey_State[i][0]==1)
+        {
+            MechKey_State[i][1]++;
+            if(MechKey_State[i][1]>75)
+            {
+                MechKey_State[i][0]=0;
+                MechKey_State[i][1]=0;
+                mech_lin.Date[i]=no_press;
+                switch(i)
+                {
+                    case 0:VolPlus_lock=0;break;
+                    case 1:Mute_lock=0;break;
+                    case 2:VolReduce_lock=0;break;
+                }
+            }
+        }
+    }
 }
 
 void KEY_Clean()
