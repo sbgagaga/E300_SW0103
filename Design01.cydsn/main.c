@@ -19,7 +19,7 @@ int main(void)
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    CyDelay(200);//上电延迟
+    CyDelay(10);//上电延迟
     PWM_BEEP_Start();
     I2C_1_Start(); 
     Timer_Init();

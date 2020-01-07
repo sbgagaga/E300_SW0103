@@ -11,7 +11,7 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM0p\ARM_GCC_541\Debug\AF_drive.o">
+<file name=".\CortexM0p\ARM_GCC_541\Debug\main.o">
 <dep name=".\Generated_Source\PSoC4\BEEP.h" />
 <dep name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_1.h" />
@@ -82,12 +82,12 @@
 <dep name=".\Generated_Source\PSoC4\cytypes.h" />
 <dep name=".\Generated_Source\PSoC4\isr_1.h" />
 <dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\AF_drive.c" />
 <dep name=".\AF_drive.h" />
 <dep name=".\Apply.h" />
 <dep name=".\I2C.h" />
 <dep name=".\diagnose.h" />
 <dep name=".\event.h" />
+<dep name=".\main.c" />
 </file>
 <file name=".\Generated_Source\PSoC4\BEEP.h" />
 <file name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
@@ -159,12 +159,12 @@
 <file name=".\Generated_Source\PSoC4\cytypes.h" />
 <file name=".\Generated_Source\PSoC4\isr_1.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
-<file name=".\AF_drive.c" />
 <file name=".\AF_drive.h" />
 <file name=".\Apply.h" />
 <file name=".\I2C.h" />
 <file name=".\diagnose.h" />
 <file name=".\event.h" />
+<file name=".\main.c" />
 <file name=".\CortexM0p\ARM_GCC_541\Debug\Apply.o">
 <dep name=".\Generated_Source\PSoC4\BEEP.h" />
 <dep name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
@@ -244,6 +244,85 @@
 <dep name=".\event.h" />
 </file>
 <file name=".\Apply.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Debug\AF_drive.o">
+<dep name=".\Generated_Source\PSoC4\BEEP.h" />
+<dep name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Control.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Filter.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Processing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_RegisterMap.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Sensing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_SensingCSD_LL.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_SmartSense_LL.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_1_Tuner.h" />
+<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC4\Crusie_in.h" />
+<dep name=".\Generated_Source\PSoC4\Crusie_in_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\Em_EEPROM_1.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_I2C.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_I2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_SCB_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_scl.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_sda.h" />
+<dep name=".\Generated_Source\PSoC4\I2C_1_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_IntClk.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_SPI_UART.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_SPI_UART_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_rx.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_rx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_tx.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_tx_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_Dynamic.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_EN.h" />
+<dep name=".\Generated_Source\PSoC4\LIN_EN_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\PWM_BEEP.h" />
+<dep name=".\Generated_Source\PSoC4\RESPlus_in.h" />
+<dep name=".\Generated_Source\PSoC4\RESPlus_in_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\SETReduce_in.h" />
+<dep name=".\Generated_Source\PSoC4\SETReduce_in_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\Timer_1.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0plus.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0plus_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\isr_1.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\AF_drive.c" />
+<dep name=".\AF_drive.h" />
+<dep name=".\Apply.h" />
+<dep name=".\I2C.h" />
+<dep name=".\diagnose.h" />
+<dep name=".\event.h" />
+</file>
+<file name=".\AF_drive.c" />
 <file name=".\CortexM0p\ARM_GCC_541\Debug\diagnose.o">
 <dep name=".\Generated_Source\PSoC4\BEEP.h" />
 <dep name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
@@ -323,85 +402,6 @@
 <dep name=".\event.h" />
 </file>
 <file name=".\diagnose.c" />
-<file name=".\CortexM0p\ARM_GCC_541\Debug\main.o">
-<dep name=".\Generated_Source\PSoC4\BEEP.h" />
-<dep name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Configuration.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Control.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Filter.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_ISR.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Processing.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_RegisterMap.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Sensing.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_SensingCSD_LL.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_SmartSense_LL.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Structure.h" />
-<dep name=".\Generated_Source\PSoC4\CapSense_1_Tuner.h" />
-<dep name=".\Generated_Source\PSoC4\Clock_1.h" />
-<dep name=".\Generated_Source\PSoC4\Crusie_in.h" />
-<dep name=".\Generated_Source\PSoC4\Crusie_in_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
-<dep name=".\Generated_Source\PSoC4\CyLib.h" />
-<dep name=".\Generated_Source\PSoC4\Em_EEPROM_1.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_BOOT.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_I2C.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_I2C_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_SCBCLK.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_SCB_IRQ.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_scl.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_scl_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_sda.h" />
-<dep name=".\Generated_Source\PSoC4\I2C_1_sda_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_ISR.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_IntClk.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_BOOT.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_PINS.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_SPI_UART.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_SPI_UART_PVT.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_rx.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_rx_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_tx.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_1_SCB_tx_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_Dynamic.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_EN.h" />
-<dep name=".\Generated_Source\PSoC4\LIN_EN_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\PWM_BEEP.h" />
-<dep name=".\Generated_Source\PSoC4\RESPlus_in.h" />
-<dep name=".\Generated_Source\PSoC4\RESPlus_in_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\SETReduce_in.h" />
-<dep name=".\Generated_Source\PSoC4\SETReduce_in_aliases.h" />
-<dep name=".\Generated_Source\PSoC4\Timer_1.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0plus.h" />
-<dep name=".\Generated_Source\PSoC4\core_cm0plus_psoc4.h" />
-<dep name=".\Generated_Source\PSoC4\cyPm.h" />
-<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC4\cypins.h" />
-<dep name=".\Generated_Source\PSoC4\cytypes.h" />
-<dep name=".\Generated_Source\PSoC4\isr_1.h" />
-<dep name=".\Generated_Source\PSoC4\project.h" />
-<dep name=".\AF_drive.h" />
-<dep name=".\Apply.h" />
-<dep name=".\I2C.h" />
-<dep name=".\diagnose.h" />
-<dep name=".\event.h" />
-<dep name=".\main.c" />
-</file>
-<file name=".\main.c" />
 <file name=".\CortexM0p\ARM_GCC_541\Debug\BEEP.o">
 <dep name=".\Generated_Source\PSoC4\BEEP.h" />
 <dep name=".\Generated_Source\PSoC4\BEEP_aliases.h" />
@@ -2187,7 +2187,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" v="132224959927851212" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" v="132228320743571626" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

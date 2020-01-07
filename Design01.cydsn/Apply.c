@@ -37,7 +37,7 @@ int16 Force_Value;
 uint8 BEEP_Flag;
 
 //Menu、Mode、ADAS、Answer、Speech、DIST
-uint16 KeyThreshold[KeyNum]={300,700,600,600,500,400};
+uint16 KeyThreshold[KeyNum]={80,230,250,200,194,147};
 
 uint8 sleep_flag;
 uint16 sleep_time;

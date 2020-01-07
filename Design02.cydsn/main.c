@@ -17,7 +17,7 @@ int main(void)
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-    CyDelay(200);//上电延迟
+    CyDelay(10);//上电延迟
     ADC_SAR_Seq_1_Start();
     ADC_SAR_Seq_1_StartConvert();
     CapSense_1_Start();

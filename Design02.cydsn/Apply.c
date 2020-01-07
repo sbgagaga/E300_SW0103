@@ -39,7 +39,7 @@ CapSense_1_RAM_SNS_STRUCT*       CapSense_SNS_Pointer=(CapSense_1_RAM_SNS_STRUCT
 
 
 //Return、Up、Down、rr、OK、SeekPlus
-uint16 KeyThreshold[KeyNum]={850,400,400,500,850,850};
+uint16 KeyThreshold[KeyNum]={129,65,110,91,196,187};
 
 void Apply()
 {

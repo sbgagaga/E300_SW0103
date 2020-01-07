@@ -11,7 +11,7 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\CortexM0p\ARM_GCC_541\Debug\Apply.o">
+<file name=".\CortexM0p\ARM_GCC_541\Debug\main.o">
 <dep name=".\Generated_Source\PSoC4\ADC.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_SAR_Seq_1.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_SAR_Seq_1_IRQ.h" />
@@ -81,10 +81,10 @@
 <dep name=".\Generated_Source\PSoC4\isr_1.h" />
 <dep name=".\Generated_Source\PSoC4\project.h" />
 <dep name=".\AF_drive.h" />
-<dep name=".\Apply.c" />
 <dep name=".\Apply.h" />
 <dep name=".\I2C.h" />
 <dep name=".\event.h" />
+<dep name=".\main.c" />
 </file>
 <file name=".\Generated_Source\PSoC4\ADC.h" />
 <file name=".\Generated_Source\PSoC4\ADC_SAR_Seq_1.h" />
@@ -155,10 +155,10 @@
 <file name=".\Generated_Source\PSoC4\isr_1.h" />
 <file name=".\Generated_Source\PSoC4\project.h" />
 <file name=".\AF_drive.h" />
-<file name=".\Apply.c" />
 <file name=".\Apply.h" />
 <file name=".\I2C.h" />
 <file name=".\event.h" />
+<file name=".\main.c" />
 <file name=".\CortexM0p\ARM_GCC_541\Debug\AF_drive.o">
 <dep name=".\Generated_Source\PSoC4\ADC.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_SAR_Seq_1.h" />
@@ -235,7 +235,7 @@
 <dep name=".\event.h" />
 </file>
 <file name=".\AF_drive.c" />
-<file name=".\CortexM0p\ARM_GCC_541\Debug\main.o">
+<file name=".\CortexM0p\ARM_GCC_541\Debug\Apply.o">
 <dep name=".\Generated_Source\PSoC4\ADC.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_SAR_Seq_1.h" />
 <dep name=".\Generated_Source\PSoC4\ADC_SAR_Seq_1_IRQ.h" />
@@ -305,12 +305,12 @@
 <dep name=".\Generated_Source\PSoC4\isr_1.h" />
 <dep name=".\Generated_Source\PSoC4\project.h" />
 <dep name=".\AF_drive.h" />
+<dep name=".\Apply.c" />
 <dep name=".\Apply.h" />
 <dep name=".\I2C.h" />
 <dep name=".\event.h" />
-<dep name=".\main.c" />
 </file>
-<file name=".\main.c" />
+<file name=".\Apply.c" />
 <file name=".\CortexM0p\ARM_GCC_541\Debug\CapSense_1_Control.o">
 <dep name=".\Generated_Source\PSoC4\CapSense_1_Configuration.h" />
 <dep name=".\Generated_Source\PSoC4\CapSense_1_Control.h" />
@@ -2928,7 +2928,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" v="132224946691914160" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" v="132228320919421684" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
