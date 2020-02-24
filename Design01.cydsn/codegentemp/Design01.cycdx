@@ -16,11 +16,11 @@
     <block name="VMux_capture" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="VMux_clock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="cy_m0s8_tcpwm_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="COUNTER" address="0x40060148" bitWidth="32" desc="Current counter value" hidden="false" />
-    <register name="CC" address="0x4006014C" bitWidth="32" desc="Compare / capture value" hidden="false" />
-    <register name="CC_BUF" address="0x40060150" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
-    <register name="PERIOD" address="0x40060154" bitWidth="32" desc="Period value" hidden="false" />
-    <register name="PERIOD_BUF" address="0x40060158" bitWidth="32" desc="Period buffer value" hidden="false" />
+    <register name="COUNTER" address="0x40060208" bitWidth="32" desc="Current counter value" hidden="false" />
+    <register name="CC" address="0x4006020C" bitWidth="32" desc="Compare / capture value" hidden="false" />
+    <register name="CC_BUF" address="0x40060210" bitWidth="32" desc="Compare / capture buffer value" hidden="false" />
+    <register name="PERIOD" address="0x40060214" bitWidth="32" desc="Period value" hidden="false" />
+    <register name="PERIOD_BUF" address="0x40060218" bitWidth="32" desc="Period buffer value" hidden="false" />
   </block>
   <block name="BEEP" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="LIN_EN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />

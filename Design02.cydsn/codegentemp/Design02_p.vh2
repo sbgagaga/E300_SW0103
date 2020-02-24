@@ -1,5 +1,5 @@
 -- Project:   Design02
--- Generated: 12/30/2019 14:01:39
+-- Generated: 01/08/2020 08:53:38
 -- PSoC Creator  4.2
 
 ENTITY Design02 IS
@@ -139,21 +139,21 @@ ARCHITECTURE __DEFAULT__ OF Design02 IS
     SIGNAL zero : bit;
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
-    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P0[6]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(1)\ : LABEL IS "P0[5]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(2)\ : LABEL IS "P0[4]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(3)\ : LABEL IS "P0[3]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(4)\ : LABEL IS "P0[2]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(5)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P2[7]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(1)\ : LABEL IS "P2[6]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(2)\ : LABEL IS "P2[5]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(3)\ : LABEL IS "P2[4]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(4)\ : LABEL IS "P2[3]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(5)\ : LABEL IS "P2[2]";
     ATTRIBUTE Location OF \CapSense_1:Cmod(0)\ : LABEL IS "P4[2]";
     ATTRIBUTE Location OF \I2C_Slave:sda(0)\ : LABEL IS "P1[3]";
     ATTRIBUTE Location OF \I2C_Slave:scl(0)\ : LABEL IS "P1[2]";
     ATTRIBUTE Location OF \I2C_1:sda(0)\ : LABEL IS "P3[1]";
     ATTRIBUTE Location OF \I2C_1:scl(0)\ : LABEL IS "P3[0]";
-    ATTRIBUTE Location OF ADC(0) : LABEL IS "P2[6]";
-    ATTRIBUTE Location OF VolPlus_in(0) : LABEL IS "P3[4]";
-    ATTRIBUTE Location OF Mute_in(0) : LABEL IS "P3[6]";
-    ATTRIBUTE Location OF VolReduce_in(0) : LABEL IS "P4[0]";
+    ATTRIBUTE Location OF ADC(0) : LABEL IS "P2[1]";
+    ATTRIBUTE Location OF VolPlus_in(0) : LABEL IS "P2[0]";
+    ATTRIBUTE Location OF Mute_in(0) : LABEL IS "P1[7]";
+    ATTRIBUTE Location OF VolReduce_in(0) : LABEL IS "P1[4]";
     ATTRIBUTE Location OF \ADC_SAR_Seq_1:cy_psoc4_sar\ : LABEL IS "F(SARADC,0)";
     ATTRIBUTE Location OF \CapSense_1:CSD\ : LABEL IS "F(CSD,0)";
     ATTRIBUTE Location OF \CapSense_1:IDACMod\ : LABEL IS "F(CSIDAC7,0)";

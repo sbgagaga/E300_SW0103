@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 12/27/2019 10:56:25
+-- Generated: 01/15/2020 20:46:11
 -- PSoC Creator  4.2
 
 ENTITY Design01 IS
@@ -127,18 +127,18 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
-    ATTRIBUTE Location OF BEEP(0) : LABEL IS "P2[6]";
-    ATTRIBUTE Location OF LIN_EN(0) : LABEL IS "P2[0]";
+    ATTRIBUTE Location OF BEEP(0) : LABEL IS "P2[0]";
+    ATTRIBUTE Location OF LIN_EN(0) : LABEL IS "P1[1]";
     ATTRIBUTE Location OF \I2C_1:sda(0)\ : LABEL IS "P1[3]";
     ATTRIBUTE Location OF \I2C_1:scl(0)\ : LABEL IS "P1[2]";
-    ATTRIBUTE Location OF \LIN_1:SCB:tx(0)\ : LABEL IS "P3[1]";
-    ATTRIBUTE Location OF \LIN_1:SCB:rx(0)\ : LABEL IS "P3[0]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P0[6]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(1)\ : LABEL IS "P0[5]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(2)\ : LABEL IS "P0[4]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(3)\ : LABEL IS "P0[3]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(4)\ : LABEL IS "P0[2]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(5)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \LIN_1:SCB:tx(0)\ : LABEL IS "P0[5]";
+    ATTRIBUTE Location OF \LIN_1:SCB:rx(0)\ : LABEL IS "P0[4]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P0[7]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(1)\ : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(2)\ : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(3)\ : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(4)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(5)\ : LABEL IS "P0[0]";
     ATTRIBUTE Location OF \CapSense_1:Cmod(0)\ : LABEL IS "P4[2]";
     ATTRIBUTE Location OF RESPlus_in(0) : LABEL IS "P3[5]";
     ATTRIBUTE Location OF Crusie_in(0) : LABEL IS "P3[7]";
@@ -153,7 +153,7 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF \CapSense_1:CSD\ : LABEL IS "F(CSD,0)";
     ATTRIBUTE Location OF \CapSense_1:IDACMod\ : LABEL IS "F(CSIDAC7,0)";
     ATTRIBUTE Location OF \CapSense_1:IDACComp\ : LABEL IS "F(CSIDAC7,1)";
-    ATTRIBUTE Location OF \PWM_BEEP:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,1)";
+    ATTRIBUTE Location OF \PWM_BEEP:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,4)";
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
@@ -409,9 +409,10 @@ BEGIN
             ff_div_3 => \CapSense_1:Net_1423_ff3\,
             ff_div_0 => open,
             ff_div_4 => Net_88_ff5,
-            ff_div_5 => Net_88_ff4,
+            ff_div_5 => open,
             ff_div_1 => \LIN_1:Net_6_ff1\,
-            ff_div_2 => \I2C_1:Net_847_ff0\);
+            ff_div_2 => \I2C_1:Net_847_ff0\,
+            ff_div_8 => Net_88_ff4);
 
     BEEP:logicalport
         GENERIC MAP(

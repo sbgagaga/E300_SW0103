@@ -1,5 +1,5 @@
 -- Project:   test1
--- Generated: 12/27/2019 10:23:21
+-- Generated: 01/08/2020 08:10:35
 -- PSoC Creator  4.2
 
 ENTITY test1 IS
@@ -82,12 +82,12 @@ ARCHITECTURE __DEFAULT__ OF test1 IS
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
-    ATTRIBUTE Location OF \CapSense:Sns(0)\ : LABEL IS "P0[6]";
-    ATTRIBUTE Location OF \CapSense:Sns(1)\ : LABEL IS "P0[5]";
-    ATTRIBUTE Location OF \CapSense:Sns(2)\ : LABEL IS "P0[4]";
-    ATTRIBUTE Location OF \CapSense:Sns(3)\ : LABEL IS "P0[3]";
-    ATTRIBUTE Location OF \CapSense:Sns(4)\ : LABEL IS "P0[2]";
-    ATTRIBUTE Location OF \CapSense:Sns(5)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \CapSense:Sns(0)\ : LABEL IS "P0[7]";
+    ATTRIBUTE Location OF \CapSense:Sns(1)\ : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF \CapSense:Sns(2)\ : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF \CapSense:Sns(3)\ : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF \CapSense:Sns(4)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \CapSense:Sns(5)\ : LABEL IS "P0[0]";
     ATTRIBUTE Location OF \CapSense:Cmod(0)\ : LABEL IS "P4[2]";
     ATTRIBUTE Location OF \EZI2C:sda(0)\ : LABEL IS "P1[3]";
     ATTRIBUTE Location OF \EZI2C:scl(0)\ : LABEL IS "P1[2]";

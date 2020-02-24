@@ -31,15 +31,21 @@ uint8 EEPROM_buf[13];
 uint16 Force_Value;
 int16 ADC_Value,ADC_Time;
 
-uint8 flagSystemON;
+uint8 flagSystemON,PowerMode;
 uint16 varPowerUpCount;
 
 CapSense_1_RAM_WD_BUTTON_STRUCT* CapSense_WD_Pointer=(CapSense_1_RAM_WD_BUTTON_STRUCT*)&CapSense_1_dsRam.wdgtList;
 CapSense_1_RAM_SNS_STRUCT*       CapSense_SNS_Pointer=(CapSense_1_RAM_SNS_STRUCT*)&CapSense_1_dsRam.snsList;
 
 
-//Return、Up、Down、rr、OK、SeekPlus
-uint16 KeyThreshold[KeyNum]={129,65,110,91,196,187};
+//Return、Up、Down、rr、OK、SeekPlus、3N
+//uint16 KeyThreshold[KeyNum]={129,65,110,91,196,187};
+
+//Return、Up、Down、SeekReduce、OK、SeekPlus、2N
+//uint16 KeyThreshold[KeyNum]={86,43,73,61,130,125};
+
+//Return、Up、Down、SeekReduce、OK、SeekPlus、弧面2N、平面3N
+uint16 KeyThreshold[KeyNum]={129,43,73,61,196,187};
 
 void Apply()
 {
@@ -56,7 +62,7 @@ void Apply()
             varPowerUpCount=0;
             CapSense_1_InitializeAllBaselines();
         }
-        if(flagSystemON)
+        if(flagSystemON && PowerMode == 0)
         {
             TouchKeyScan();
             MechKeyScan();
@@ -419,20 +425,24 @@ void ADC_Check()
             I2CWriteBuf[ADC_index]=0x02;
             flagSystemON=0;
             varPowerUpCount=0;
+            PowerMode = 2;
         }
         else if(ADC_Value>=Vol_6&&ADC_Value<Vol_8P5)
         {
             I2CWriteBuf[ADC_index]=0x03;
             flagSystemON=0;
             varPowerUpCount=0;
+            PowerMode = 3;
         }
         else if(ADC_Value<Vol_6)
         {
             I2CWriteBuf[ADC_index]=0x01;
+            PowerMode = 1;
         }
         else if(ADC_Value>Vol_9&&ADC_Value<Vol_16)
         {
             I2CWriteBuf[ADC_index]=0;
+            PowerMode = 0;
         }
     }
 }

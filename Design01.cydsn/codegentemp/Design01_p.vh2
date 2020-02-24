@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 12/27/2019 10:56:24
+-- Generated: 01/15/2020 20:46:11
 -- PSoC Creator  4.2
 
 ENTITY Design01 IS
@@ -126,18 +126,18 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     SIGNAL zero : bit;
     ATTRIBUTE GROUND OF zero : SIGNAL IS true;
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
-    ATTRIBUTE Location OF BEEP(0) : LABEL IS "P2[6]";
-    ATTRIBUTE Location OF LIN_EN(0) : LABEL IS "P2[0]";
+    ATTRIBUTE Location OF BEEP(0) : LABEL IS "P2[0]";
+    ATTRIBUTE Location OF LIN_EN(0) : LABEL IS "P1[1]";
     ATTRIBUTE Location OF \I2C_1:sda(0)\ : LABEL IS "P1[3]";
     ATTRIBUTE Location OF \I2C_1:scl(0)\ : LABEL IS "P1[2]";
-    ATTRIBUTE Location OF \LIN_1:SCB:tx(0)\ : LABEL IS "P3[1]";
-    ATTRIBUTE Location OF \LIN_1:SCB:rx(0)\ : LABEL IS "P3[0]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P0[6]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(1)\ : LABEL IS "P0[5]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(2)\ : LABEL IS "P0[4]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(3)\ : LABEL IS "P0[3]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(4)\ : LABEL IS "P0[2]";
-    ATTRIBUTE Location OF \CapSense_1:Sns(5)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \LIN_1:SCB:tx(0)\ : LABEL IS "P0[5]";
+    ATTRIBUTE Location OF \LIN_1:SCB:rx(0)\ : LABEL IS "P0[4]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(0)\ : LABEL IS "P0[7]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(1)\ : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(2)\ : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(3)\ : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(4)\ : LABEL IS "P0[1]";
+    ATTRIBUTE Location OF \CapSense_1:Sns(5)\ : LABEL IS "P0[0]";
     ATTRIBUTE Location OF \CapSense_1:Cmod(0)\ : LABEL IS "P4[2]";
     ATTRIBUTE Location OF RESPlus_in(0) : LABEL IS "P3[5]";
     ATTRIBUTE Location OF Crusie_in(0) : LABEL IS "P3[7]";

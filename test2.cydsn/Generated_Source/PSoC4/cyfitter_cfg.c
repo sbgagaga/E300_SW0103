@@ -220,6 +220,7 @@ static void ClockSetup(void)
 static void AnalogSetDefault(void);
 static void AnalogSetDefault(void)
 {
+	CY_SET_XTND_REG32((void CYFAR *)CYREG_HSIOM_AMUX_SPLIT_CTL0, 0x00000003u);
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_CSD_SW_DSI_SEL, 0x00000010u);
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_CTBM0_DFT_CTRL, 0x00000003u);
 	CY_SET_XTND_REG32((void CYFAR *)CYREG_PASS_DSAB_DSAB_CTRL, 0x00000020u);
@@ -299,9 +300,9 @@ void cyfitter_cfg(void)
 	}
 
 	/* Perform second pass device configuration. These items must be configured in specific order after the regular configuration is done. */
-	/* IOPINS0_0 Starting address: CYDEV_GPIO_PRT0_BASE */
-	CY_SET_REG32((void *)(CYDEV_GPIO_PRT0_BASE), 0x0000003Eu);
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT0_PC2), 0x0000007Eu);
+	/* IOPINS0_2 Starting address: CYDEV_GPIO_PRT2_BASE */
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT2_BASE), 0x0000007Cu);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT2_PC2), 0x000000FCu);
 
 	/* IOPINS0_3 Starting address: CYDEV_GPIO_PRT3_BASE */
 	CY_SET_REG32((void *)(CYDEV_GPIO_PRT3_BASE), 0x00000003u);

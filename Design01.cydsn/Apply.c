@@ -36,8 +36,14 @@ uint8 SlaveBuf[I2C_LEN]={0},LastReadBuf[I2C_LEN]={0};
 int16 Force_Value;
 uint8 BEEP_Flag;
 
-//Menu、Mode、ADAS、Answer、Speech、DIST
-uint16 KeyThreshold[KeyNum]={80,230,250,200,194,147};
+//Menu、Mode、ADAS、Answer、Speech、DIST、3N
+//uint16 KeyThreshold[KeyNum]={80,230,250,200,194,147};
+
+//Menu、Mode、ADAS、Answer、Speech、DIST、2N
+//uint16 KeyThreshold[KeyNum]={53,153,167,133,130,98};
+
+//Menu、Mode、ADAS、Answer、Speech、DIST、弧面2N、平面3N
+uint16 KeyThreshold[KeyNum]={53,230,250,200,130,98};
 
 uint8 sleep_flag;
 uint16 sleep_time;
@@ -76,6 +82,7 @@ void Apply()
     if(DEF_TICK_10mS == 1)
     {
         DEF_TICK_10mS = 0;
+
         SleepCheck();
         I2C_task();
     }
@@ -523,19 +530,25 @@ void SleepMode()
 {
     if(sleep_flag)
     {
-        LIN_EN_Write(0);
-        LIN_1_SCB_rx_Sleep();
-        LIN_1_SCB_tx_Sleep();
-        LIN_1_SCB_rx_SetDriveMode(LIN_1_SCB_rx_DM_RES_UP);
-        CyIntEnable(3);
-        CyIntSetVector(3, &LINRx);
-        LIN_1_SCB_rx_SetInterruptMode(LIN_1_SCB_rx_0_INTR, LIN_1_SCB_rx_INTR_FALLING);
+        
+
         AF_stop();
         PWM_BEEP_Stop();
         I2C_1_Stop();
-        CapSense_1_Stop();
+        CapSense_1_Sleep();
+        
+        LIN_EN_Write(0);
+        LIN_1_SCB_rx_Sleep();
+        LIN_1_SCB_tx_Sleep();
+        LIN_1_SCB_rx_SetDriveMode(LIN_1_SCB_rx_DM_RES_UP);//LIN_1_SCB_rx_DM_RES_UP
+        CyIntSetVector(0, &LINRx);
+        LIN_1_SCB_rx_SetInterruptMode(LIN_1_SCB_rx_0_INTR, LIN_1_SCB_rx_INTR_FALLING);
+        CyIntEnable(0);
+        LIN_1_SCB_rx_ClearInterrupt();
+        
         CySysPmDeepSleep();
         CySoftwareReset();
+        //while(1);
     }
 }
 

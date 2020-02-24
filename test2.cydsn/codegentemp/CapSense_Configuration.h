@@ -673,14 +673,14 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 /*******************************************************************************
 * OK initialization values for RAM data structure
 *******************************************************************************/
-#define CapSense_OK_RESOLUTION                  (CapSense_RES10BIT)
-#define CapSense_OK_FINGER_TH                   (60u)
-#define CapSense_OK_NOISE_TH                    (30u)
-#define CapSense_OK_NNOISE_TH                   (15u)
+#define CapSense_OK_RESOLUTION                  (CapSense_RES11BIT)
+#define CapSense_OK_FINGER_TH                   (150u)
+#define CapSense_OK_NOISE_TH                    (75u)
+#define CapSense_OK_NNOISE_TH                   (37u)
 #define CapSense_OK_HYSTERESIS                  (10u)
 #define CapSense_OK_ON_DEBOUNCE                 (3u)
 #define CapSense_OK_LOW_BSLN_RST                (30u)
-#define CapSense_OK_IDAC_MOD0                   (18u)
+#define CapSense_OK_IDAC_MOD0                   (12u)
 #define CapSense_OK_SNS_CLK                     (8u)
 #define CapSense_OK_SNS_CLK_SOURCE              (0u)
 
@@ -694,13 +694,13 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 * Down initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_DOWN_RESOLUTION                (CapSense_RES11BIT)
-#define CapSense_DOWN_FINGER_TH                 (100u)
-#define CapSense_DOWN_NOISE_TH                  (50u)
-#define CapSense_DOWN_NNOISE_TH                 (25u)
+#define CapSense_DOWN_FINGER_TH                 (80u)
+#define CapSense_DOWN_NOISE_TH                  (40u)
+#define CapSense_DOWN_NNOISE_TH                 (20u)
 #define CapSense_DOWN_HYSTERESIS                (10u)
 #define CapSense_DOWN_ON_DEBOUNCE               (3u)
 #define CapSense_DOWN_LOW_BSLN_RST              (30u)
-#define CapSense_DOWN_IDAC_MOD0                 (24u)
+#define CapSense_DOWN_IDAC_MOD0                 (20u)
 #define CapSense_DOWN_SNS_CLK                   (8u)
 #define CapSense_DOWN_SNS_CLK_SOURCE            (0u)
 
@@ -714,13 +714,13 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 * SeekReduce initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_SEEKREDUCE_RESOLUTION          (CapSense_RES11BIT)
-#define CapSense_SEEKREDUCE_FINGER_TH           (90u)
-#define CapSense_SEEKREDUCE_NOISE_TH            (45u)
-#define CapSense_SEEKREDUCE_NNOISE_TH           (20u)
+#define CapSense_SEEKREDUCE_FINGER_TH           (110u)
+#define CapSense_SEEKREDUCE_NOISE_TH            (55u)
+#define CapSense_SEEKREDUCE_NNOISE_TH           (27u)
 #define CapSense_SEEKREDUCE_HYSTERESIS          (10u)
 #define CapSense_SEEKREDUCE_ON_DEBOUNCE         (3u)
 #define CapSense_SEEKREDUCE_LOW_BSLN_RST        (30u)
-#define CapSense_SEEKREDUCE_IDAC_MOD0           (25u)
+#define CapSense_SEEKREDUCE_IDAC_MOD0           (18u)
 #define CapSense_SEEKREDUCE_SNS_CLK             (8u)
 #define CapSense_SEEKREDUCE_SNS_CLK_SOURCE      (0u)
 
@@ -734,13 +734,13 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 * SeekPlus initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_SEEKPLUS_RESOLUTION            (CapSense_RES10BIT)
-#define CapSense_SEEKPLUS_FINGER_TH             (70u)
-#define CapSense_SEEKPLUS_NOISE_TH              (35u)
-#define CapSense_SEEKPLUS_NNOISE_TH             (16u)
+#define CapSense_SEEKPLUS_FINGER_TH             (100u)
+#define CapSense_SEEKPLUS_NOISE_TH              (50u)
+#define CapSense_SEEKPLUS_NNOISE_TH             (25u)
 #define CapSense_SEEKPLUS_HYSTERESIS            (10u)
 #define CapSense_SEEKPLUS_ON_DEBOUNCE           (3u)
 #define CapSense_SEEKPLUS_LOW_BSLN_RST          (30u)
-#define CapSense_SEEKPLUS_IDAC_MOD0             (18u)
+#define CapSense_SEEKPLUS_IDAC_MOD0             (10u)
 #define CapSense_SEEKPLUS_SNS_CLK               (8u)
 #define CapSense_SEEKPLUS_SNS_CLK_SOURCE        (0u)
 
@@ -760,7 +760,7 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 #define CapSense_UP_HYSTERESIS                  (10u)
 #define CapSense_UP_ON_DEBOUNCE                 (3u)
 #define CapSense_UP_LOW_BSLN_RST                (30u)
-#define CapSense_UP_IDAC_MOD0                   (28u)
+#define CapSense_UP_IDAC_MOD0                   (24u)
 #define CapSense_UP_SNS_CLK                     (8u)
 #define CapSense_UP_SNS_CLK_SOURCE              (0u)
 
@@ -773,24 +773,24 @@ typedef uint16 CapSense_THRESHOLD_TYPE;
 /*******************************************************************************
 * Ret initialization values for RAM data structure
 *******************************************************************************/
-#define CapSense_RET_RESOLUTION                 (CapSense_RES11BIT)
-#define CapSense_RET_FINGER_TH                  (120u)
-#define CapSense_RET_NOISE_TH                   (60u)
-#define CapSense_RET_NNOISE_TH                  (30u)
+#define CapSense_RET_RESOLUTION                 (CapSense_RES10BIT)
+#define CapSense_RET_FINGER_TH                  (80u)
+#define CapSense_RET_NOISE_TH                   (40u)
+#define CapSense_RET_NNOISE_TH                  (20u)
 #define CapSense_RET_HYSTERESIS                 (10u)
 #define CapSense_RET_ON_DEBOUNCE                (3u)
 #define CapSense_RET_LOW_BSLN_RST               (30u)
-#define CapSense_RET_IDAC_MOD0                  (20u)
+#define CapSense_RET_IDAC_MOD0                  (14u)
 #define CapSense_RET_SNS_CLK                    (8u)
 #define CapSense_RET_SNS_CLK_SOURCE             (0u)
 
 /* RAM Sensor Parameters Definitions */
-#define CapSense_OK_SNS0_IDAC_COMP0             (18u)
-#define CapSense_DOWN_SNS0_IDAC_COMP0           (22u)
-#define CapSense_SEEKREDUCE_SNS0_IDAC_COMP0     (20u)
-#define CapSense_SEEKPLUS_SNS0_IDAC_COMP0       (18u)
-#define CapSense_UP_SNS0_IDAC_COMP0             (24u)
-#define CapSense_RET_SNS0_IDAC_COMP0            (20u)
+#define CapSense_OK_SNS0_IDAC_COMP0             (13u)
+#define CapSense_DOWN_SNS0_IDAC_COMP0           (18u)
+#define CapSense_SEEKREDUCE_SNS0_IDAC_COMP0     (18u)
+#define CapSense_SEEKPLUS_SNS0_IDAC_COMP0       (14u)
+#define CapSense_UP_SNS0_IDAC_COMP0             (20u)
+#define CapSense_RET_SNS0_IDAC_COMP0            (15u)
 
 
 

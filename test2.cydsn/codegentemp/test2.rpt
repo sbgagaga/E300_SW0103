@@ -1,10 +1,10 @@
-Loading plugins phase: Elapsed time ==> 0s.158ms
+Loading plugins phase: Elapsed time ==> 0s.151ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -d CY8C4125LQI-S433 -s E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -d CY8C4125LQI-S433 -s E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 1s.261ms
+Elaboration phase: Elapsed time ==> 1s.273ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
 HDL generation phase: Elapsed time ==> 0s.032ms
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.032ms
 ======================================================================
 Compiling:  test2.v
 Program  :   D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 test2.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 test2.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  test2.v
 Program  :   D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 test2.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 test2.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  test2.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 -verilog test2.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 -verilog test2.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Fri Dec 27 13:43:29 2019
+Wed Jan 08 08:53:14 2020
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 test2.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Fri Dec 27 13:43:29 2019
+Wed Jan 08 08:53:14 2020
 
 Flattening file 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'
 Flattening file 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -80,11 +80,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  test2.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 -verilog test2.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 -verilog test2.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Fri Dec 27 13:43:29 2019
+Wed Jan 08 08:53:14 2020
 
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -95,9 +95,9 @@ Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpk
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\codegentemp\test2.ctl'.
+Linking 'E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\codegentemp\test2.ctl'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
-Linking 'E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\codegentemp\test2.v'.
+Linking 'E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\codegentemp\test2.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
@@ -108,11 +108,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  test2.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 -verilog test2.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 -verilog test2.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Fri Dec 27 13:43:29 2019
+Wed Jan 08 08:53:14 2020
 
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -123,9 +123,9 @@ Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpk
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\codegentemp\test2.ctl'.
+Linking 'E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\codegentemp\test2.ctl'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
-Linking 'E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\codegentemp\test2.v'.
+Linking 'E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\codegentemp\test2.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
@@ -238,16 +238,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : D:\cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 test2.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -dcpsoc3 test2.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.692ms
+Warp synthesis phase: Elapsed time ==> 0s.731ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Friday, 27 December 2019 13:43:29
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\test2.cyprj -d CY8C4125LQI-S433 test2.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 08 January 2020 08:53:14
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -d CY8C4125LQI-S433 test2.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.016ms
+Design parsing phase: Elapsed time ==> 0s.018ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -708,7 +708,7 @@ DAC                           :      :      :      :
   7-bit IDAC                  :    2 :    0 :    2 : 100.00 %
 </CYPRESSTAG>
 Technology Mapping: Elapsed time ==> 0s.017ms
-Tech Mapping phase: Elapsed time ==> 0s.027ms
+Tech Mapping phase: Elapsed time ==> 0s.025ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -716,12 +716,12 @@ Tech Mapping phase: Elapsed time ==> 0s.027ms
 
 Cell                                : Block                              
 =========================================================================
-\CapSense:Sns(0)\                   : [IOP=(0)][IoId=(6)]                
-\CapSense:Sns(1)\                   : [IOP=(0)][IoId=(5)]                
-\CapSense:Sns(2)\                   : [IOP=(0)][IoId=(4)]                
-\CapSense:Sns(3)\                   : [IOP=(0)][IoId=(3)]                
-\CapSense:Sns(4)\                   : [IOP=(0)][IoId=(2)]                
-\CapSense:Sns(5)\                   : [IOP=(0)][IoId=(1)]                
+\CapSense:Sns(0)\                   : [IOP=(2)][IoId=(7)]                
+\CapSense:Sns(1)\                   : [IOP=(2)][IoId=(6)]                
+\CapSense:Sns(2)\                   : [IOP=(2)][IoId=(5)]                
+\CapSense:Sns(3)\                   : [IOP=(2)][IoId=(4)]                
+\CapSense:Sns(4)\                   : [IOP=(2)][IoId=(3)]                
+\CapSense:Sns(5)\                   : [IOP=(2)][IoId=(2)]                
 \CapSense:Cmod(0)\                  : [IOP=(4)][IoId=(2)]                
 \EZI2C:sda(0)\                      : [IOP=(3)][IoId=(1)]                
 \EZI2C:scl(0)\                      : [IOP=(3)][IoId=(0)]                
@@ -734,15 +734,15 @@ ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.1210582s
+Elapsed time ==> 0.1126281s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.241ms
+Analog Placement phase: Elapsed time ==> 0s.235ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0024732 secs
+Route success=True, Iterations=1 Elapsed=0.0033396 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.003ms
+Analog Routing phase: Elapsed time ==> 0s.004ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -756,18 +756,22 @@ Map of net to items {
     sense0
     BYA
     amuxbusa_csd
-    P0_P41
-    p0_1
-    P0_P42
-    p0_2
-    P0_P43
-    p0_3
-    P0_P44
-    p0_4
-    P0_P45
-    p0_5
-    P0_P46
-    p0_6
+    AMUX_PASS_CSD_SWITCH_A_SR
+    amuxbridge_pass_csd_a
+    AMUX_PASS_CSD_SWITCH_A_SL
+    amuxbusa_pass
+    P2_P47
+    p2_7
+    P2_P46
+    p2_6
+    P2_P44
+    p2_4
+    P2_P45
+    p2_5
+    P2_P42
+    p2_2
+    P2_P43
+    p2_3
     idac1_out
     IAIB
     idac0_out
@@ -782,18 +786,22 @@ Map of item to net {
   sense0                                           -> \CapSense:Net_2_0\
   BYA                                              -> \CapSense:Net_2_0\
   amuxbusa_csd                                     -> \CapSense:Net_2_0\
-  P0_P41                                           -> \CapSense:Net_2_0\
-  p0_1                                             -> \CapSense:Net_2_0\
-  P0_P42                                           -> \CapSense:Net_2_0\
-  p0_2                                             -> \CapSense:Net_2_0\
-  P0_P43                                           -> \CapSense:Net_2_0\
-  p0_3                                             -> \CapSense:Net_2_0\
-  P0_P44                                           -> \CapSense:Net_2_0\
-  p0_4                                             -> \CapSense:Net_2_0\
-  P0_P45                                           -> \CapSense:Net_2_0\
-  p0_5                                             -> \CapSense:Net_2_0\
-  P0_P46                                           -> \CapSense:Net_2_0\
-  p0_6                                             -> \CapSense:Net_2_0\
+  AMUX_PASS_CSD_SWITCH_A_SR                        -> \CapSense:Net_2_0\
+  amuxbridge_pass_csd_a                            -> \CapSense:Net_2_0\
+  AMUX_PASS_CSD_SWITCH_A_SL                        -> \CapSense:Net_2_0\
+  amuxbusa_pass                                    -> \CapSense:Net_2_0\
+  P2_P47                                           -> \CapSense:Net_2_0\
+  p2_7                                             -> \CapSense:Net_2_0\
+  P2_P46                                           -> \CapSense:Net_2_0\
+  p2_6                                             -> \CapSense:Net_2_0\
+  P2_P44                                           -> \CapSense:Net_2_0\
+  p2_4                                             -> \CapSense:Net_2_0\
+  P2_P45                                           -> \CapSense:Net_2_0\
+  p2_5                                             -> \CapSense:Net_2_0\
+  P2_P42                                           -> \CapSense:Net_2_0\
+  p2_2                                             -> \CapSense:Net_2_0\
+  P2_P43                                           -> \CapSense:Net_2_0\
+  p2_3                                             -> \CapSense:Net_2_0\
   idac1_out                                        -> \CapSense:Net_2_0\
   IAIB                                             -> \CapSense:Net_2_0\
   idac0_out                                        -> \CapSense:Net_2_0\
@@ -821,7 +829,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.008ms
+Partitioning: Elapsed time ==> 0s.018ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -858,7 +866,9 @@ Intr container @ [IntrContainer=(0)]:
             is_nmi = 0
         }
 Port 0 contains the following IO cells:
-[IoId=1]: 
+Port 1 contains the following IO cells:
+Port 2 contains the following IO cells:
+[IoId=2]: 
 Pin : Name = \CapSense:Sns(5)\
     Attributes:
         Alias: Ret_Sns0
@@ -900,7 +910,7 @@ Pin : Name = \CapSense:Sns(5)\
     {
     }
 
-[IoId=2]: 
+[IoId=3]: 
 Pin : Name = \CapSense:Sns(4)\
     Attributes:
         Alias: Up_Sns0
@@ -942,7 +952,7 @@ Pin : Name = \CapSense:Sns(4)\
     {
     }
 
-[IoId=3]: 
+[IoId=4]: 
 Pin : Name = \CapSense:Sns(3)\
     Attributes:
         Alias: SeekPlus_Sns0
@@ -984,7 +994,7 @@ Pin : Name = \CapSense:Sns(3)\
     {
     }
 
-[IoId=4]: 
+[IoId=5]: 
 Pin : Name = \CapSense:Sns(2)\
     Attributes:
         Alias: SeekReduce_Sns0
@@ -1026,7 +1036,7 @@ Pin : Name = \CapSense:Sns(2)\
     {
     }
 
-[IoId=5]: 
+[IoId=6]: 
 Pin : Name = \CapSense:Sns(1)\
     Attributes:
         Alias: Down_Sns0
@@ -1068,7 +1078,7 @@ Pin : Name = \CapSense:Sns(1)\
     {
     }
 
-[IoId=6]: 
+[IoId=7]: 
 Pin : Name = \CapSense:Sns(0)\
     Attributes:
         Alias: OK_Sns0
@@ -1110,8 +1120,6 @@ Pin : Name = \CapSense:Sns(0)\
     {
     }
 
-Port 1 contains the following IO cells:
-Port 2 contains the following IO cells:
 Port 3 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = \EZI2C:scl(0)\
@@ -1383,12 +1391,12 @@ Port Configuration report
      |     |       | Interrupt |                  |                    | 
 Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connections
 -----+-----+-------+-----------+------------------+--------------------+---------------------------
-   0 |   1 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(5)\ | Analog(\CapSense:Net_2_0\)
-     |   2 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(4)\ | Analog(\CapSense:Net_2_0\)
-     |   3 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(3)\ | Analog(\CapSense:Net_2_0\)
-     |   4 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(2)\ | Analog(\CapSense:Net_2_0\)
-     |   5 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(1)\ | Analog(\CapSense:Net_2_0\)
-     |   6 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(0)\ | Analog(\CapSense:Net_2_0\)
+   2 |   2 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(5)\ | Analog(\CapSense:Net_2_0\)
+     |   3 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(4)\ | Analog(\CapSense:Net_2_0\)
+     |   4 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(3)\ | Analog(\CapSense:Net_2_0\)
+     |   5 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(2)\ | Analog(\CapSense:Net_2_0\)
+     |   6 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(1)\ | Analog(\CapSense:Net_2_0\)
+     |   7 |     * |      NONE |      HI_Z_ANALOG |  \CapSense:Sns(0)\ | Analog(\CapSense:Net_2_0\)
 -----+-----+-------+-----------+------------------+--------------------+---------------------------
    3 |   0 |     * |      NONE |    OPEN_DRAIN_LO |     \EZI2C:scl(0)\ | FB(Net_20)
      |   1 |     * |      NONE |    OPEN_DRAIN_LO |     \EZI2C:sda(0)\ | FB(Net_21)
@@ -1399,15 +1407,15 @@ Port | Pin | Fixed |      Type |       Drive Mode |               Name | Connect
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.009ms
-Digital Placement phase: Elapsed time ==> 0s.172ms
+Digital Placement phase: Elapsed time ==> 0s.180ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "D:\cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "D:\cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/10/route_arch-rrg.cydata" --vh2-path "test2_r.vh2" --pcf-path "test2.pco" --des-name "test2" --dsf-path "test2.dsf"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 0s.226ms
+Digital Routing phase: Elapsed time ==> 0s.208ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.113ms
+Bitstream Generation phase: Elapsed time ==> 0s.099ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
 Bitstream Verification phase: Elapsed time ==> 0s.002ms
@@ -1420,11 +1428,11 @@ Static timing analysis phase: Elapsed time ==> 0s.000ms
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.130ms
+Design database save phase: Elapsed time ==> 0s.140ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 0s.959ms
+cydsfit: Elapsed time ==> 0s.940ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 0s.959ms
-API generation phase: Elapsed time ==> 1s.578ms
-Dependency generation phase: Elapsed time ==> 0s.020ms
+Fitter phase: Elapsed time ==> 0s.940ms
+API generation phase: Elapsed time ==> 1s.573ms
+Dependency generation phase: Elapsed time ==> 0s.010ms
 Cleanup phase: Elapsed time ==> 0s.001ms
