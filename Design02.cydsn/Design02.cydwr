@@ -934,8 +934,8 @@
         <Data key="derive_type" value="BUILTIN" />
         <Data key="desired_freq" value="0" />
         <Data key="desired_unit" value="0" />
-        <Data key="divider" value="13" />
-        <Data key="enabled" value="False" />
+        <Data key="divider" value="14" />
+        <Data key="enabled" value="True" />
         <Data key="minus_tolerance" value="0" />
         <Data key="name" value="Timer (WDT)" />
         <Data key="netlist_name" value="Timer (WDT)" />

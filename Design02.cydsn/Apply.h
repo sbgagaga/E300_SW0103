@@ -78,10 +78,13 @@ typedef union
 #define no_press        0
 #define I2C_Slave_dress 0x08
 #define I2C_LEN         48
+#define Vol_18          2150
+#define Vol_17P5        2090
 #define Vol_16P5        1970 
 #define Vol_16          1910
 #define Vol_9           1075
 #define Vol_8P5         1015
+#define Vol_6P5         776
 #define Vol_6           716
 #define ADC_index       9
 #define RestReg         0x0F
@@ -109,6 +112,8 @@ void MasterOrder();
 uint32 CapSense_IsWidgetActive_bit(uint32 widgetId);
 void KEY_Clean();
 void Key_Free();
+uint8 SignalCheck();
+void I2C_Detect();
 
     
 #endif

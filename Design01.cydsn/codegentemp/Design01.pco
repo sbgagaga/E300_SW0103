@@ -1,5 +1,5 @@
 # Design01
-# 2020-01-15 12:46:11Z
+# 2020-03-20 01:29:03Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
@@ -36,3 +36,5 @@ set_location "\CapSense_1:CSD\" p4csdcell -1 -1 0
 set_location "\CapSense_1:IDACMod\" p4csidacV2cell -1 -1 0
 set_location "\CapSense_1:IDACComp\" p4csidacV2cell -1 -1 1
 set_location "\PWM_BEEP:cy_m0s8_tcpwm_1\" m0s8tcpwmcell -1 -1 4
+set_location "WdtIsr" interrupt -1 -1 6
+set_location "SRSS" m0s8srsscell -1 -1 0

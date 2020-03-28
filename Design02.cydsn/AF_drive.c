@@ -56,14 +56,22 @@ uint16 AF_sampling()
 {
     int16 temp1,temp2,temp3;
     addr=0x44;
-    while(ReadCommand(addr,0x00)==addr)
+    for(int i=0;i<4;i++)
     {
-        addr++;
-        if(addr>=0x48)
+        if(ReadCommand(addr,0x00)!=addr)
         {
-            addr=0x44;
+            break;
         }
+        addr++;
     }
+//    while(ReadCommand(addr,0x00)==addr)
+//    {
+//        addr++;
+//        if(addr>=0x48)
+//        {
+//            addr=0x44;
+//        }
+//    }
     temp1=ReadCommand(addr,0x03);
     temp2=ReadCommand(addr,0x04);
     temp3=((temp1<<8)|temp2)>>4;

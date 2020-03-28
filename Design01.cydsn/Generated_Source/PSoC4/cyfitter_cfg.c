@@ -205,6 +205,7 @@ static void ClockSetup(void)
 
 	(void)CyIntSetVector(11u, &CySysTimerIsr);
 	CyIntEnable(11u);
+	CY_SET_REG32((void *)(CYREG_WDT_MATCH), 0x00001000u);
 	CY_SET_REG32((void *)(CYREG_WCO_WDT_CONFIG), 0x00000000u);
 	CySysClkSetTimerSource(CY_SYS_CLK_TIMER_SRC_ILO);
 	/* Set Flash Cycles based on newly configured 24.00MHz HFCLK. */

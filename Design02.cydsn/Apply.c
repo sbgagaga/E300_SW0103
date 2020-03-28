@@ -24,12 +24,13 @@ uint8 VolPlus_lock,Mute_lock,VolReduce_lock;
 uint8 TouchKey_State[6][6]={0};
 uint8 MechKey_State[3][3]={0};
 
-uint8 I2CWriteBuf[I2C_LEN]={0};
+uint8 I2CWriteBuf[I2C_LEN]={0,0,0,0,0,0,0,0,0,0x01,0,0,0,0,0};
 uint8 I2CReadBuf[13];
 uint8 EEPROM_buf[13];
 
 uint16 Force_Value;
-int16 ADC_Value,ADC_Time;
+int32 ADC_Value,ADC_Time;
+uint8 RepPreFlag;
 
 uint8 flagSystemON,PowerMode;
 uint16 varPowerUpCount;
@@ -44,8 +45,14 @@ CapSense_1_RAM_SNS_STRUCT*       CapSense_SNS_Pointer=(CapSense_1_RAM_SNS_STRUCT
 //Return、Up、Down、SeekReduce、OK、SeekPlus、2N
 //uint16 KeyThreshold[KeyNum]={86,43,73,61,130,125};
 
+//Return、Up、Down、SeekReduce、OK、SeekPlus、3N
+//uint16 KeyThreshold[KeyNum]={230,78,69,128,191,283};
+
 //Return、Up、Down、SeekReduce、OK、SeekPlus、弧面2N、平面3N
 uint16 KeyThreshold[KeyNum]={129,43,73,61,196,187};
+
+
+uint16 SDA_cnt;
 
 void Apply()
 {
@@ -55,6 +62,10 @@ void Apply()
         if(flagSystemON==0&&varPowerUpCount<250)
         {
             varPowerUpCount++;
+            KEY_Clean();
+            CapSense_1_ProcessAllWidgets();
+            CapSense_1_ScanAllWidgets();
+            CapSense_1_InitializeAllBaselines();
         }
         else if(varPowerUpCount>=250)
         {
@@ -66,8 +77,18 @@ void Apply()
         {
             TouchKeyScan();
             MechKeyScan();
+            if(KeyNumCheck())
+            {
+                TouchKeyCount=0;
+                VolPlus_cnt=0;
+                Mute_cnt=0;
+                VolReduce_cnt=0;
+                //CapSense_1_InitializeAllBaselines();
+                //KEY_Clean();
+            }
             Key_Free();
         }
+        I2C_Detect();
     }
 
     if(DEF_TICK_5mS == 1)
@@ -89,7 +110,6 @@ void Apply()
     if(DEF_TICK_20mS == 1)
     {
         DEF_TICK_20mS = 0;
-        I2C_Date_Pro();
     }
 
     if(DEF_TICK_50mS == 1)
@@ -122,17 +142,13 @@ void TouchKeyScan()
         touch_key.Key.OK=CapSense_IsWidgetActive_bit(CapSense_1_OK_WDGT_ID);
         touch_key.Key.SeekPlus=CapSense_IsWidgetActive_bit(CapSense_1_SEEKPLUS_WDGT_ID);
         
-        if(KeyNumCheck())
+        if(SignalCheck())
         {
-            touch_key.Date=0;
-            TouchKeyLock=0;
-            TouchKeyCount=0;
-            KEY_Clean();
-            CapSense_1_ScanAllWidgets();    //扫描所有的传感器
+            CapSense_1_InitializeAllBaselines();
             return;
         }
         
-        if(touch_key.Date!=0&&touch_key.Date==TouchKeyBuf&&!TouchKeyLock)
+        if(touch_key.Date!=0&&touch_key.Date==TouchKeyBuf&&!TouchKeyLock&&!RepPreFlag)
         {
             TouchKeyCount++;
             if(TouchKeyCount>=25)
@@ -148,7 +164,7 @@ void TouchKeyScan()
                 }
             }
         }
-        else if(touch_key.Date!=0&&touch_key.Date==TouchKeyBuf&&TouchKeyLock)
+        else if(touch_key.Date!=0&&touch_key.Date==TouchKeyBuf&&TouchKeyLock&&!RepPreFlag)
         {
             TouchKeyCount++;
             if(TouchKeyCount>=10000)
@@ -164,7 +180,7 @@ void TouchKeyScan()
                 }
             }
         }
-        else if(touch_key.Date==0||touch_key.Date!=TouchKeyBuf)
+        else if(touch_key.Date==0||touch_key.Date!=TouchKeyBuf||RepPreFlag)
         {
             if(TouchKeyLock)
             {
@@ -210,17 +226,7 @@ void MechKeyScan()
     VolPlus=VolPlus_in_Read();
     Mute=Mute_in_Read();
     VolReduce=VolReduce_in_Read();
-    if(KeyNumCheck())
-    {
-        VolPlus_cnt=0;
-        Mute_cnt=0;
-        VolReduce_cnt=0;
-        VolPlus_lock=0;
-        Mute_lock=0;
-        VolReduce_lock=0;
-        KeyNumCheck();
-        return;
-    }
+
     MechKeyPro(VolPlus,&VolPlus_cnt,&VolPlus_lock,&mech_lin.Lin.VolPlus,0);
     MechKeyPro(Mute,&Mute_cnt,&Mute_lock,&mech_lin.Lin.Mute,1);
     MechKeyPro(VolReduce,&VolReduce_cnt,&VolReduce_lock,&mech_lin.Lin.VolReduce,2);
@@ -228,7 +234,7 @@ void MechKeyScan()
 
 void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 index)
 {
-    if(KeyType==0&&!*KeyLock)
+    if(KeyType==0&&!*KeyLock&&!RepPreFlag)
     {
         (*KeyCnt)++;
         if(*KeyCnt>=25)
@@ -237,7 +243,7 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
             *KeyLIN=short_press;
         }
     }
-    else if(KeyType==0&&*KeyLock)
+    else if(KeyType==0&&*KeyLock&&!RepPreFlag)
     {
         (*KeyCnt)++;
         if(*KeyCnt>=10000)
@@ -246,7 +252,7 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
             *KeyLIN=error;
         }
     }
-    else if(KeyType)
+    else if(KeyType||RepPreFlag)
     {
         if(*KeyLock)
         {
@@ -265,6 +271,24 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
     }
 }
 
+uint8 SignalCheck()
+{
+    uint32 cnt;
+    CapSense_1_GetParam(CapSense_1_RET_SNS0_DIFF_PARAM_ID,&cnt);
+    if(cnt>250) return 1;
+    CapSense_1_GetParam(CapSense_1_UP_SNS0_DIFF_PARAM_ID ,&cnt);
+    if(cnt>250) return 1;
+    CapSense_1_GetParam(CapSense_1_DOWN_SNS0_DIFF_PARAM_ID,&cnt);
+    if(cnt>250) return 1;
+    CapSense_1_GetParam(CapSense_1_SEEKREDUCE_SNS0_DIFF_PARAM_ID,&cnt);
+    if(cnt>250) return 1;
+    CapSense_1_GetParam(CapSense_1_OK_SNS0_DIFF_PARAM_ID,&cnt);
+    if(cnt>250) return 1;
+    CapSense_1_GetParam(CapSense_1_SEEKPLUS_SNS0_DIFF_PARAM_ID,&cnt);
+    if(cnt>250) return 1;
+    return 0;
+}
+
 uint8 KeyNumCheck()
 {
     uint8 KeySum=0;
@@ -273,10 +297,6 @@ uint8 KeyNumCheck()
         if(mask&touch_key.Date)
         {
             KeySum++;
-            if(KeySum>=2)
-            {
-                return 1;
-            }
         }
     }
     if(!VolPlus)
@@ -293,7 +313,12 @@ uint8 KeyNumCheck()
     }
     if(KeySum>=2)
     {
+        RepPreFlag=1;
         return 1;
+    }
+    if(KeySum==0)
+    {
+        RepPreFlag=0;
     }
     return 0;
 }
@@ -337,6 +362,15 @@ void Key_Free()
 
 void KEY_Clean()
 {
+    TouchKeyCount=0;
+    TouchKeyLock=0;
+    VolPlus_cnt=0;
+    Mute_cnt=0;
+    VolReduce_cnt=0;
+    VolPlus_lock=0;
+    Mute_lock=0;
+    VolReduce_lock=0;
+    RepPreFlag=0;
     for(int i=0;i<6;i++)
     {
         for(int j=0;j<2;j++)
@@ -420,14 +454,27 @@ void ADC_Check()
     if(ADC_SAR_Seq_1_IsEndConversion(ADC_SAR_Seq_1_WAIT_FOR_RESULT)==1)
     {
         ADC_Value=ADC_SAR_Seq_1_GetResult16(0);
-        if(ADC_Value>Vol_16P5)
+       
+        if(ADC_Value>Vol_18)
+        {
+            I2CWriteBuf[ADC_index]=0x01;
+            PowerMode = 1;
+            flagSystemON=0;
+            varPowerUpCount=0;
+        }
+        else if(ADC_Value>Vol_16P5&&ADC_Value<Vol_17P5)
         {
             I2CWriteBuf[ADC_index]=0x02;
             flagSystemON=0;
             varPowerUpCount=0;
             PowerMode = 2;
         }
-        else if(ADC_Value>=Vol_6&&ADC_Value<Vol_8P5)
+        else if(ADC_Value>Vol_9&&ADC_Value<Vol_16)
+        {
+            I2CWriteBuf[ADC_index]=0;
+            PowerMode = 0;
+        }
+        else if(ADC_Value>=Vol_6P5&&ADC_Value<Vol_8P5)
         {
             I2CWriteBuf[ADC_index]=0x03;
             flagSystemON=0;
@@ -438,11 +485,8 @@ void ADC_Check()
         {
             I2CWriteBuf[ADC_index]=0x01;
             PowerMode = 1;
-        }
-        else if(ADC_Value>Vol_9&&ADC_Value<Vol_16)
-        {
-            I2CWriteBuf[ADC_index]=0;
-            PowerMode = 0;
+            flagSystemON=0;
+            varPowerUpCount=0;
         }
     }
 }
@@ -454,13 +498,22 @@ void MasterOrder()
         case 1:
         I2CReadBuf[0]=0;
         I2C_Slave_Sleep();
-        ADC_SAR_Seq_1_Stop();
-        AF_stop();
+        //ADC_SAR_Seq_1_Stop();
+        //AF_stop();
         CapSense_1_Stop();
-        I2C_1_Stop();
+        //I2C_1_Stop();
+        CySysWdtClearInterrupt();
+        CySysWdtDisable();
+        
         CySysPmDeepSleep();
-        CySoftwareReset();
         I2C_Slave_Wakeup();
+        CySoftwareReset();
+        CySysWdtEnable();
+        CapSense_1_Start();
+        //ADC_SAR_Seq_1_Start();
+        //ADC_SAR_Seq_1_StartConvert();
+        //I2C_1_Start();
+        
         break;
         
         case 2:
@@ -482,7 +535,23 @@ void MasterOrder()
     }
 }
 
-
+void I2C_Detect()
+{
+    uint8 SDA_State=0;
+    SDA_State=I2C_Slave_sda_Read();
+    if(SDA_State==0)
+    {
+        SDA_cnt++;
+        if(SDA_cnt==125)
+        {
+            CySoftwareReset();
+        }
+    }
+    else
+    {
+        SDA_cnt=0;
+    }
+}
 
 
 

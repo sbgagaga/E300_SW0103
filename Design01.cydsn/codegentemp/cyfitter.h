@@ -435,6 +435,17 @@
 #define LIN_EN__PS CYREG_GPIO_PRT1_PS
 #define LIN_EN__SHIFT 1u
 
+/* WdtIsr */
+#define WdtIsr__INTC_CLR_EN_REG CYREG_CM0P_ICER
+#define WdtIsr__INTC_CLR_PD_REG CYREG_CM0P_ICPR
+#define WdtIsr__INTC_MASK 0x40u
+#define WdtIsr__INTC_NUMBER 6u
+#define WdtIsr__INTC_PRIOR_MASK 0xC00000u
+#define WdtIsr__INTC_PRIOR_NUM 3u
+#define WdtIsr__INTC_PRIOR_REG CYREG_CM0P_IPR1
+#define WdtIsr__INTC_SET_EN_REG CYREG_CM0P_ISER
+#define WdtIsr__INTC_SET_PD_REG CYREG_CM0P_ISPR
+
 /* Clock_1 */
 #define Clock_1__CTRL_REGISTER CYREG_PERI_PCLK_CTL8
 #define Clock_1__DIV_ID 0x00000042u
@@ -1061,6 +1072,7 @@
 #define CYDEV_VDDD 3.3
 #define CYDEV_VDDD_MV 3300
 #define CYDEV_WDT_GENERATE_ISR 1u
+#define CYDEV_WDT0_DIV 65536
 #define CYIPBLOCK_m0s8cpussv3_VERSION 1
 #define CYIPBLOCK_m0s8csdv2_VERSION 1
 #define CYIPBLOCK_m0s8ioss_VERSION 1

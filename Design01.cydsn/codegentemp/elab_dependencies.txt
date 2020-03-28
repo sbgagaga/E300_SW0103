@@ -1,4 +1,4 @@
-E:\weiwancheng\E300-77\two\44444\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch
+E:\weiwancheng\E300-77\two\66666\Workspace01\Design01.cydsn\TopDesign\TopDesign.cysch
 D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.cysym
 D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.pdf
 D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.primitive
@@ -283,7 +283,20 @@ C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPR
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_v2_20\Custom\cyparameters.cs
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_v2_20\Custom\cycustomizer.cs
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_v2_20\Custom\Controls\cydynamicdatacontrol.resx
-E:\weiwancheng\E300-77\two\44444\Workspace01\Design01.cydsn\Design01.cydwr
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\cy_gsref_v2_10.cysym
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\cy_gsref_v2_10.cystate
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\cy_gsref_v2_10.cyprimitive
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\cy_gsref_v2_10.pdf
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\version.cypatch
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\custom.cs
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\cycenteredtextcontrol.cs
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\cycenteredtextcontrol.designer.cs
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\cygsrefidcontrol.cs
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\cygsrefidcontrol.designer.cs
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\cycenteredtextcontrol.resx
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10\Custom\cygsrefidcontrol.resx
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_gsref_v2_10
+E:\weiwancheng\E300-77\two\66666\Workspace01\Design01.cydsn\Design01.cydwr
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.c
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.h
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\LIN_Dynamic_v5_0\API\LIN_Dynamic.c

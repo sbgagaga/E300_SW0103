@@ -1,4 +1,4 @@
-E:\weiwancheng\E300-77\two\44444\Workspace01\Design02.cydsn\TopDesign\TopDesign.cysch
+E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\TopDesign\TopDesign.cysch
 D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_P4_v2_50\ADC_SAR_SEQ_P4_v2_50.cysym
 D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_P4_v2_50\ADC_SAR_SEQ_P4_v2_50.cysch
 D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\ADC_SAR_SEQ_P4_v2_50\ADC_SAR_SEQ_P4_v2_50.pdf
@@ -304,7 +304,7 @@ C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPR
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_v2_20\Custom\cyparameters.cs
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_v2_20\Custom\cycustomizer.cs
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_v2_20\Custom\Controls\cydynamicdatacontrol.resx
-E:\weiwancheng\E300-77\two\44444\Workspace01\Design02.cydsn\Design02.cydwr
+E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cydwr
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.c
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.h
 C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cm0gcc.ld

@@ -24,25 +24,27 @@ int main(void)
     I2C_Slave_I2CSlaveInitReadBuf(I2CWriteBuf,I2C_LEN);
     I2C_Slave_I2CSlaveInitWriteBuf(I2CReadBuf,13);
     Timer_Init();
-    I2C_Slave_Start();
+    CySysWdtEnable();
+//    Em_EEPROM_1_Init(0x7800);
+//    Em_EEPROM_1_Read(0, EEPROM_buf, 13);
+//    if(EEPROM_buf[0]==0x24)
+//    {
+//        for(int i=0;i<6;i++)
+//        {
+//            KeyThreshold[i]=(uint16)EEPROM_buf[i*2+1]<<8|EEPROM_buf[i*2+2];
+//        }
+//    }
     I2C_1_Start();  
+    I2C_Slave_Start();
     AF_Init();
-    Em_EEPROM_1_Init(0x7800);
-    Em_EEPROM_1_Read(0, EEPROM_buf, 13);
-    if(EEPROM_buf[0]==0x24)
-    {
-        for(int i=0;i<6;i++)
-        {
-            KeyThreshold[i]=(uint16)EEPROM_buf[i*2+1]<<8|EEPROM_buf[i*2+2];
-        }
-    }
-
     for(;;)
     {
         /* Place your application code here. */
         Apply();
+        I2C_Date_Pro();
         I2C_task();
         MasterOrder();
+        CySysWdtClearInterrupt();
     }
 }
 

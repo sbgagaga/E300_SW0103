@@ -8,6 +8,8 @@ net ClockBlock_HFClk
 	term   ":interrupt_8.clock"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_13.clock"
 	term   ":interrupt_13.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_6.clock"
+	term   ":interrupt_6.clock"
 end ClockBlock_HFClk
 net Net_199
 	term   ":m0s8tcpwmcell_4.line"
@@ -44,6 +46,12 @@ net Net_82
 	switch ":interrupt_idmux_14.interrupt_idmux_14__out==>:interrupt_14.interrupt"
 	term   ":interrupt_14.interrupt"
 end Net_82
+net WDT_INT_OUT
+	term   ":m0s8srsscell.interrupt_wdt"
+	switch ":m0s8srsscell.interrupt_wdt==>:interrupt_idmux_6.in_0"
+	switch ":interrupt_idmux_6.interrupt_idmux_6__out==>:interrupt_6.interrupt"
+	term   ":interrupt_6.interrupt"
+end WDT_INT_OUT
 net \CapSense_1:Net_120\
 	term   ":p4csdcell.irq"
 	switch ":p4csdcell.irq==>:interrupt_idmux_13.in_0"

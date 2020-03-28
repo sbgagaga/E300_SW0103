@@ -90,6 +90,11 @@ extern uint8 signline[12];
 extern uint8 SlavePressValue[2];
 extern uint16 KeyThreshold[KeyNum];
 extern uint8 SlavePressThrValue[12];
+extern uint8 LowPowerFlag;
+extern uint8 PowerLock;
+extern uint16 DeepSleep_time;
+extern uint8 BEEP_Flag;
+
 
 void TouchKeyScan();
 void MechKeyScan();
@@ -109,6 +114,9 @@ void SlaveGoSleep(uint8);
 void KEY_Clean();
 void SlaveReset();
 void Key_Free();
+uint8 SignalCheck();
+void LIN_Check();
+void wdt_isr();
 
 uint32 CapSense_IsWidgetActive_bit(uint32 widgetId);
 

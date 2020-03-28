@@ -20,7 +20,7 @@ uint8 Diag_flag;
 BUFFTER_TYPE RX_Buffer={128,0,Diag_Revbuf};
 BUFFTER_TYPE TX_Buffer={128,0,Diag_Sendbuf};
 
-const uint8 SW_DID_FF00[10]={"SW0102    "};
+const uint8 SW_DID_FF00[10]={"SW0103    "};
 const uint8 HW_DID_FF01[10]={"HW02      "};
 CapSense_1_RAM_WD_BUTTON_STRUCT* CapSense_WD_Pointer=(CapSense_1_RAM_WD_BUTTON_STRUCT*)&CapSense_1_dsRam.wdgtList;
 CapSense_1_RAM_SNS_STRUCT*       CapSense_SNS_Pointer=(CapSense_1_RAM_SNS_STRUCT*)&CapSense_1_dsRam.snsList;
@@ -90,6 +90,7 @@ void DiagPro()
             FillInBuffer(&TX_Buffer,&LIN_SID,1);
             LIN_SID26();
             ld_send_message_LIN_1(TX_Buffer.pointer,DiagNAD,TX_Buffer.buffer);
+            break;
         }
     }
 }

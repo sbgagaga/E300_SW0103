@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 01/15/2020 20:46:11
+-- Generated: 03/20/2020 09:29:03
 -- PSoC Creator  4.2
 
 ENTITY Design01 IS
@@ -53,6 +53,7 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE global_signal OF Net_88_ff5 : SIGNAL IS true;
     SIGNAL RESPlus_in(0)__PA : bit;
     SIGNAL SETReduce_in(0)__PA : bit;
+    SIGNAL WDT_INT_OUT : bit;
     SIGNAL \\\CapSense_1:Cmod(0)\\__PA\ : bit;
     SIGNAL \CapSense_1:Net_120\ : bit;
     SIGNAL \CapSense_1:Net_1423_ff3\ : bit;
@@ -154,6 +155,8 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF \CapSense_1:IDACMod\ : LABEL IS "F(CSIDAC7,0)";
     ATTRIBUTE Location OF \CapSense_1:IDACComp\ : LABEL IS "F(CSIDAC7,1)";
     ATTRIBUTE Location OF \PWM_BEEP:cy_m0s8_tcpwm_1\ : LABEL IS "F(TCPWM,4)";
+    ATTRIBUTE Location OF WdtIsr : LABEL IS "[IntrContainer=(0)][IntrId=(6)]";
+    ATTRIBUTE Location OF SRSS : LABEL IS "F(SRSS,0)";
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
@@ -336,6 +339,19 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
             i2c_sda : IN std_ulogic;
             tr_rx_req : OUT std_ulogic;
             tr_tx_req : OUT std_ulogic);
+    END COMPONENT;
+    COMPONENT m0s8srsscell
+        PORT (
+            clock_pump : IN std_ulogic;
+            clock_ss : IN std_ulogic;
+            dsi_ss_code_0 : IN std_ulogic;
+            dsi_ss_code_1 : IN std_ulogic;
+            dsi_ss_code_2 : IN std_ulogic;
+            dsi_ss_code_3 : IN std_ulogic;
+            dsi_ss_code_4 : IN std_ulogic;
+            dsi_ss_updown : OUT std_ulogic;
+            interrupt_wdt : OUT std_ulogic;
+            interrupt_pwr : OUT std_ulogic);
     END COMPONENT;
     COMPONENT m0s8tcpwmcell
         PORT (
@@ -1686,5 +1702,17 @@ BEGIN
             line => Net_199,
             line_compl => Net_200,
             interrupt => Net_195);
+
+    WdtIsr:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => WDT_INT_OUT,
+            clock => ClockBlock_HFClk);
+
+    SRSS:m0s8srsscell
+        PORT MAP(
+            interrupt_wdt => WDT_INT_OUT);
 
 END __DEFAULT__;

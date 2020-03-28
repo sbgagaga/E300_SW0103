@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: EZI2C_SCB_IRQ.c  
+* File Name: WdtIsr.c  
 * Version 1.70
 *
 *  Description:
@@ -18,15 +18,15 @@
 
 #include <cydevice_trm.h>
 #include <CyLib.h>
-#include <EZI2C_SCB_IRQ.h>
+#include <WdtIsr.h>
 #include "cyapicallbacks.h"
 
-#if !defined(EZI2C_SCB_IRQ__REMOVED) /* Check for removal by optimization */
+#if !defined(WdtIsr__REMOVED) /* Check for removal by optimization */
 
 /*******************************************************************************
 *  Place your includes, defines and code here 
 ********************************************************************************/
-/* `#START EZI2C_SCB_IRQ_intc` */
+/* `#START WdtIsr_intc` */
 
 /* `#END` */
 
@@ -37,7 +37,7 @@ CY_ISR_PROTO(IntDefaultHandler);
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_Start
+* Function Name: WdtIsr_Start
 ********************************************************************************
 *
 * Summary:
@@ -53,24 +53,24 @@ CY_ISR_PROTO(IntDefaultHandler);
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_Start(void)
+void WdtIsr_Start(void)
 {
     /* For all we know the interrupt is active. */
-    EZI2C_SCB_IRQ_Disable();
+    WdtIsr_Disable();
 
-    /* Set the ISR to point to the EZI2C_SCB_IRQ Interrupt. */
-    EZI2C_SCB_IRQ_SetVector(&EZI2C_SCB_IRQ_Interrupt);
+    /* Set the ISR to point to the WdtIsr Interrupt. */
+    WdtIsr_SetVector(&WdtIsr_Interrupt);
 
     /* Set the priority. */
-    EZI2C_SCB_IRQ_SetPriority((uint8)EZI2C_SCB_IRQ_INTC_PRIOR_NUMBER);
+    WdtIsr_SetPriority((uint8)WdtIsr_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    EZI2C_SCB_IRQ_Enable();
+    WdtIsr_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_StartEx
+* Function Name: WdtIsr_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -96,24 +96,24 @@ void EZI2C_SCB_IRQ_Start(void)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_StartEx(cyisraddress address)
+void WdtIsr_StartEx(cyisraddress address)
 {
     /* For all we know the interrupt is active. */
-    EZI2C_SCB_IRQ_Disable();
+    WdtIsr_Disable();
 
-    /* Set the ISR to point to the EZI2C_SCB_IRQ Interrupt. */
-    EZI2C_SCB_IRQ_SetVector(address);
+    /* Set the ISR to point to the WdtIsr Interrupt. */
+    WdtIsr_SetVector(address);
 
     /* Set the priority. */
-    EZI2C_SCB_IRQ_SetPriority((uint8)EZI2C_SCB_IRQ_INTC_PRIOR_NUMBER);
+    WdtIsr_SetPriority((uint8)WdtIsr_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    EZI2C_SCB_IRQ_Enable();
+    WdtIsr_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_Stop
+* Function Name: WdtIsr_Stop
 ********************************************************************************
 *
 * Summary:
@@ -126,22 +126,22 @@ void EZI2C_SCB_IRQ_StartEx(cyisraddress address)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_Stop(void)
+void WdtIsr_Stop(void)
 {
     /* Disable this interrupt. */
-    EZI2C_SCB_IRQ_Disable();
+    WdtIsr_Disable();
 
     /* Set the ISR to point to the passive one. */
-    EZI2C_SCB_IRQ_SetVector(&IntDefaultHandler);
+    WdtIsr_SetVector(&IntDefaultHandler);
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_Interrupt
+* Function Name: WdtIsr_Interrupt
 ********************************************************************************
 *
 * Summary:
-*   The default Interrupt Service Routine for EZI2C_SCB_IRQ.
+*   The default Interrupt Service Routine for WdtIsr.
 *
 *   Add custom code between the START and END comments to keep the next version
 *   of this file from over-writing your code.
@@ -156,27 +156,27 @@ void EZI2C_SCB_IRQ_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(EZI2C_SCB_IRQ_Interrupt)
+CY_ISR(WdtIsr_Interrupt)
 {
-    #ifdef EZI2C_SCB_IRQ_INTERRUPT_INTERRUPT_CALLBACK
-        EZI2C_SCB_IRQ_Interrupt_InterruptCallback();
-    #endif /* EZI2C_SCB_IRQ_INTERRUPT_INTERRUPT_CALLBACK */ 
+    #ifdef WdtIsr_INTERRUPT_INTERRUPT_CALLBACK
+        WdtIsr_Interrupt_InterruptCallback();
+    #endif /* WdtIsr_INTERRUPT_INTERRUPT_CALLBACK */ 
 
     /*  Place your Interrupt code here. */
-    /* `#START EZI2C_SCB_IRQ_Interrupt` */
+    /* `#START WdtIsr_Interrupt` */
 
     /* `#END` */
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_SetVector
+* Function Name: WdtIsr_SetVector
 ********************************************************************************
 *
 * Summary:
-*   Change the ISR vector for the Interrupt. Note calling EZI2C_SCB_IRQ_Start
+*   Change the ISR vector for the Interrupt. Note calling WdtIsr_Start
 *   will override any effect this method would have had. To set the vector 
-*   before the component has been started use EZI2C_SCB_IRQ_StartEx instead.
+*   before the component has been started use WdtIsr_StartEx instead.
 * 
 *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
 *   used to provide consistent definition across compilers:
@@ -196,14 +196,14 @@ CY_ISR(EZI2C_SCB_IRQ_Interrupt)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_SetVector(cyisraddress address)
+void WdtIsr_SetVector(cyisraddress address)
 {
-    CyRamVectors[CYINT_IRQ_BASE + EZI2C_SCB_IRQ__INTC_NUMBER] = address;
+    CyRamVectors[CYINT_IRQ_BASE + WdtIsr__INTC_NUMBER] = address;
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_GetVector
+* Function Name: WdtIsr_GetVector
 ********************************************************************************
 *
 * Summary:
@@ -216,22 +216,22 @@ void EZI2C_SCB_IRQ_SetVector(cyisraddress address)
 *   Address of the ISR in the interrupt vector table.
 *
 *******************************************************************************/
-cyisraddress EZI2C_SCB_IRQ_GetVector(void)
+cyisraddress WdtIsr_GetVector(void)
 {
-    return CyRamVectors[CYINT_IRQ_BASE + EZI2C_SCB_IRQ__INTC_NUMBER];
+    return CyRamVectors[CYINT_IRQ_BASE + WdtIsr__INTC_NUMBER];
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_SetPriority
+* Function Name: WdtIsr_SetPriority
 ********************************************************************************
 *
 * Summary:
 *   Sets the Priority of the Interrupt. 
 *
-*   Note calling EZI2C_SCB_IRQ_Start or EZI2C_SCB_IRQ_StartEx will 
+*   Note calling WdtIsr_Start or WdtIsr_StartEx will 
 *   override any effect this API would have had. This API should only be called
-*   after EZI2C_SCB_IRQ_Start or EZI2C_SCB_IRQ_StartEx has been called. 
+*   after WdtIsr_Start or WdtIsr_StartEx has been called. 
 *   To set the initial priority for the component, use the Design-Wide Resources
 *   Interrupt Editor.
 *
@@ -246,20 +246,20 @@ cyisraddress EZI2C_SCB_IRQ_GetVector(void)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_SetPriority(uint8 priority)
+void WdtIsr_SetPriority(uint8 priority)
 {
 	uint8 interruptState;
-    uint32 priorityOffset = ((EZI2C_SCB_IRQ__INTC_NUMBER % 4u) * 8u) + 6u;
+    uint32 priorityOffset = ((WdtIsr__INTC_NUMBER % 4u) * 8u) + 6u;
     
 	interruptState = CyEnterCriticalSection();
-    *EZI2C_SCB_IRQ_INTC_PRIOR = (*EZI2C_SCB_IRQ_INTC_PRIOR & (uint32)(~EZI2C_SCB_IRQ__INTC_PRIOR_MASK)) |
+    *WdtIsr_INTC_PRIOR = (*WdtIsr_INTC_PRIOR & (uint32)(~WdtIsr__INTC_PRIOR_MASK)) |
                                     ((uint32)priority << priorityOffset);
 	CyExitCriticalSection(interruptState);
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_GetPriority
+* Function Name: WdtIsr_GetPriority
 ********************************************************************************
 *
 * Summary:
@@ -274,19 +274,19 @@ void EZI2C_SCB_IRQ_SetPriority(uint8 priority)
 *    PSoC 4: Priority is from 0 to 3.
 *
 *******************************************************************************/
-uint8 EZI2C_SCB_IRQ_GetPriority(void)
+uint8 WdtIsr_GetPriority(void)
 {
     uint32 priority;
-	uint32 priorityOffset = ((EZI2C_SCB_IRQ__INTC_NUMBER % 4u) * 8u) + 6u;
+	uint32 priorityOffset = ((WdtIsr__INTC_NUMBER % 4u) * 8u) + 6u;
 
-    priority = (*EZI2C_SCB_IRQ_INTC_PRIOR & EZI2C_SCB_IRQ__INTC_PRIOR_MASK) >> priorityOffset;
+    priority = (*WdtIsr_INTC_PRIOR & WdtIsr__INTC_PRIOR_MASK) >> priorityOffset;
 
     return (uint8)priority;
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_Enable
+* Function Name: WdtIsr_Enable
 ********************************************************************************
 *
 * Summary:
@@ -301,15 +301,15 @@ uint8 EZI2C_SCB_IRQ_GetPriority(void)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_Enable(void)
+void WdtIsr_Enable(void)
 {
     /* Enable the general interrupt. */
-    *EZI2C_SCB_IRQ_INTC_SET_EN = EZI2C_SCB_IRQ__INTC_MASK;
+    *WdtIsr_INTC_SET_EN = WdtIsr__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_GetState
+* Function Name: WdtIsr_GetState
 ********************************************************************************
 *
 * Summary:
@@ -322,15 +322,15 @@ void EZI2C_SCB_IRQ_Enable(void)
 *   1 if enabled, 0 if disabled.
 *
 *******************************************************************************/
-uint8 EZI2C_SCB_IRQ_GetState(void)
+uint8 WdtIsr_GetState(void)
 {
     /* Get the state of the general interrupt. */
-    return ((*EZI2C_SCB_IRQ_INTC_SET_EN & (uint32)EZI2C_SCB_IRQ__INTC_MASK) != 0u) ? 1u:0u;
+    return ((*WdtIsr_INTC_SET_EN & (uint32)WdtIsr__INTC_MASK) != 0u) ? 1u:0u;
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_Disable
+* Function Name: WdtIsr_Disable
 ********************************************************************************
 *
 * Summary:
@@ -343,15 +343,15 @@ uint8 EZI2C_SCB_IRQ_GetState(void)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_Disable(void)
+void WdtIsr_Disable(void)
 {
     /* Disable the general interrupt. */
-    *EZI2C_SCB_IRQ_INTC_CLR_EN = EZI2C_SCB_IRQ__INTC_MASK;
+    *WdtIsr_INTC_CLR_EN = WdtIsr__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_SetPending
+* Function Name: WdtIsr_SetPending
 ********************************************************************************
 *
 * Summary:
@@ -370,14 +370,14 @@ void EZI2C_SCB_IRQ_Disable(void)
 *   interrupts).
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_SetPending(void)
+void WdtIsr_SetPending(void)
 {
-    *EZI2C_SCB_IRQ_INTC_SET_PD = EZI2C_SCB_IRQ__INTC_MASK;
+    *WdtIsr_INTC_SET_PD = WdtIsr__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: EZI2C_SCB_IRQ_ClearPending
+* Function Name: WdtIsr_ClearPending
 ********************************************************************************
 *
 * Summary:
@@ -395,9 +395,9 @@ void EZI2C_SCB_IRQ_SetPending(void)
 *   None
 *
 *******************************************************************************/
-void EZI2C_SCB_IRQ_ClearPending(void)
+void WdtIsr_ClearPending(void)
 {
-    *EZI2C_SCB_IRQ_INTC_CLR_PD = EZI2C_SCB_IRQ__INTC_MASK;
+    *WdtIsr_INTC_CLR_PD = WdtIsr__INTC_MASK;
 }
 
 #endif /* End check for removal by optimization */

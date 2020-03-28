@@ -2,7 +2,7 @@
 --	Conversion of Design01.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Jan 15 20:46:10 2020
+--	Fri Mar 20 09:29:01 2020
 --
 
 USE cypress.cypress.all;
@@ -243,6 +243,7 @@ SIGNAL tmpFB_0__SETReduce_in_net_0 : bit;
 SIGNAL tmpIO_0__SETReduce_in_net_0 : bit;
 TERMINAL tmpSIOVREF__SETReduce_in_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__SETReduce_in_net_0 : bit;
+SIGNAL Net_231 : bit;
 BEGIN
 
 zero <=  ('0') ;
@@ -1225,5 +1226,12 @@ SETReduce_in:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__BEEP_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__SETReduce_in_net_0);
+WdtIsr:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_231);
+GlobalSignal_1:cy_gsref_v1_0
+	GENERIC MAP(guid=>"1563FAA8-0748-4a1c-9785-CED309984BE3")
+	PORT MAP(sig_out=>Net_231);
 
 END R_T_L;

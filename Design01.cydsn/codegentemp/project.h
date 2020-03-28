@@ -50,6 +50,7 @@
 #include "SETReduce_in.h"
 #include "SETReduce_in_aliases.h"
 #include "Em_EEPROM_1.h"
+#include "WdtIsr.h"
 #include "I2C_1_SCBCLK.h"
 #include "I2C_1_sda.h"
 #include "I2C_1_sda_aliases.h"
