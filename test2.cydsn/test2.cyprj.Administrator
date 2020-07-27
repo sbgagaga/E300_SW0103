@@ -498,6 +498,495 @@
 <file name=".\Generated_Source\PSoC4\cymetadata.c" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
+<dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Release@CortexM0p" xml_contents_version="2">
+<CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Control.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Control.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Control.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Filter.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Processing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sensing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Tuner.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Control.c" />
+<file name=".\Generated_Source\PSoC4\CapSense_Control.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Filter.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Processing.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Sensing.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_Tuner.h" />
+<file name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<file name=".\Generated_Source\PSoC4\CyLib.h" />
+<file name=".\Generated_Source\PSoC4\cyPm.h" />
+<file name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter.h" />
+<file name=".\Generated_Source\PSoC4\cypins.h" />
+<file name=".\Generated_Source\PSoC4\cytypes.h" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Filter.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Filter.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Filter.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Filter.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_INT.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_INT.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sensing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_INT.c" />
+<file name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.h" />
+<file name=".\cyapicallbacks.h" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Processing.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Filter.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Processing.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Processing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Processing.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Sensing.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sensing.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sensing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Sensing.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_SensingCSD_LL.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sensing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Structure.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Structure.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Tuner.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Control.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Tuner.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Tuner.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_Tuner.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\main.o">
+<dep name=".\Generated_Source\PSoC4\CapSense.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_RegisterMap.h" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCB_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0plus.h" />
+<dep name=".\Generated_Source\PSoC4\core_cm0plus_psoc4.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\project.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Configuration.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Control.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Filter.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Processing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Sensing.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_SensingCSD_LL.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Structure.h" />
+<dep name=".\Generated_Source\PSoC4\CapSense_Tuner.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\main.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense.h" />
+<file name=".\Generated_Source\PSoC4\CapSense_RegisterMap.h" />
+<file name=".\Generated_Source\PSoC4\CyFlash.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_BOOT.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_SCB_IRQ.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<file name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<file name=".\Generated_Source\PSoC4\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC4\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC4\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC4\core_cm0plus.h" />
+<file name=".\Generated_Source\PSoC4\core_cm0plus_psoc4.h" />
+<file name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<file name=".\Generated_Source\PSoC4\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<file name=".\Generated_Source\PSoC4\project.h" />
+<file name=".\main.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_BOOT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_BOOT.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_BOOT.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_EZI2C.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_EZI2C.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_EZI2C_BOOT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_BOOT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_BOOT.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_EZI2C_BOOT.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_EZI2C_INT.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_INT.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_EZI2C_INT.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_PM.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PINS.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PM.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_PVT.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_PM.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CapSense_ISR.o">
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.c" />
+<dep name=".\Generated_Source\PSoC4\CapSense_ISR.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CapSense_ISR.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\Cm0plusStart.o">
+<dep name=".\Generated_Source\PSoC4\Cm0plusStart.c" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\Cm0plusStart.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CyFlash.o">
+<dep name=".\Generated_Source\PSoC4\CyFlash.c" />
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CyFlash.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CyLFClk.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.c" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CyLFClk.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CyLib.o">
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.c" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\CyLib.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_SCBCLK.o">
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_SCBCLK.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_SCB_IRQ.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCB_IRQ.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_SCB_IRQ.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_SCB_IRQ.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_scl.o">
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_scl.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_scl_PM.o">
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_PM.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_scl_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_scl_PM.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_sda.o">
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_sda.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_sda_PM.o">
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda.h" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_PM.c" />
+<dep name=".\Generated_Source\PSoC4\EZI2C_sda_aliases.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\EZI2C_sda_PM.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\cyPm.o">
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cyPm.c" />
+<dep name=".\Generated_Source\PSoC4\cyPm.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cypins.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\cyPm.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\cy_em_eeprom.o">
+<dep name=".\Generated_Source\PSoC4\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.c" />
+<dep name=".\Generated_Source\PSoC4\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\cy_em_eeprom.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\cyfitter_cfg.o">
+<dep name=".\Generated_Source\PSoC4\CyLFClk.h" />
+<dep name=".\Generated_Source\PSoC4\CyLib.h" />
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.c" />
+<dep name=".\Generated_Source\PSoC4\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC4\cyfitter_cfg.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\cymetadata.o">
+<dep name=".\Generated_Source\PSoC4\cymetadata.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\cymetadata.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\cyutils.o">
+<dep name=".\Generated_Source\PSoC4\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC4\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC4\cytypes.h" />
+<dep name=".\Generated_Source\PSoC4\cyutils.c" />
+</file>
+<file name=".\Generated_Source\PSoC4\cyutils.c" />
+<file name=".\CortexM0p\ARM_GCC_541\Release\CyBootAsmGnu.o">
+<dep name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<dep name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
+<dep name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+</file>
+<file name=".\Generated_Source\PSoC4\CyBootAsmGnu.s" />
+<file name=".\Generated_Source\PSoC4\cydevicegnu_trm.inc" />
+<file name=".\Generated_Source\PSoC4\cyfittergnu.inc" />
+</CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
+</dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
 </name>
 <name v="link_deps">
@@ -538,6 +1027,45 @@
 <dep name=".\CortexM0p\ARM_GCC_541\Debug\EZI2C_scl_PM.o" />
 <dep name=".\CortexM0p\ARM_GCC_541\Debug\EZI2C_SCB_IRQ.o" />
 <dep name=".\CortexM0p\ARM_GCC_541\Debug\test2.a" />
+</file>
+</CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
+</dependency_info>
+<dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Release@CortexM0p" xml_contents_version="2">
+<CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM0p\ARM_GCC_541\Release\test2.hex">
+<dep name=".\CortexM0p\ARM_GCC_541\Release\main.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\cyfitter_cfg.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\cymetadata.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\cy_em_eeprom.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\Cm0plusStart.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CyFlash.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CyLib.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\cyPm.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\cyutils.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CyBootAsmGnu.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CyLFClk.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Control.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Processing.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Structure.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Tuner.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Filter.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_Sensing.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_INT.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_SensingCSD_LL.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_PM.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_BOOT.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_EZI2C.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_EZI2C_INT.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_EZI2C_BOOT.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\CapSense_ISR.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_SCBCLK.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_sda.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_sda_PM.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_scl.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_scl_PM.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\EZI2C_SCB_IRQ.o" />
+<dep name=".\CortexM0p\ARM_GCC_541\Release\test2.a" />
 </file>
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
@@ -586,72 +1114,112 @@
 <name_val_pair name="E:\weiwancheng\E300-77\two\33333\Workspace01\test2.cydsn\CortexM0p\ARM_GCC_541\Debug\test2.hex" v="-mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0plusgcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
 <name_val_pair name="E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\CortexM0p\ARM_GCC_541\Debug\test2.hex" v="-mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0plusgcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
 </name>
+<name v="c9323d49-d323-40b8-9b59-cc008d68a989@Release@CortexM0p">
+<name_val_pair name="main.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\cyfitter_cfg.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\cymetadata.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\cy_em_eeprom.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\Cm0plusStart.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CyFlash.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CyLib.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\cyPm.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\cyutils.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CyBootAsmGnu.s" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -alh=${OutputDir}/${CompileFile}.lst -g -W" />
+<name_val_pair name="Generated_Source\PSoC4\CyLFClk.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_Control.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_Processing.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_Structure.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_Tuner.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_Filter.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_Sensing.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_INT.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_SensingCSD_LL.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_PM.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_BOOT.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_EZI2C.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_EZI2C_INT.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_EZI2C_BOOT.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\CapSense_ISR.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_SCBCLK.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_sda.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_sda_PM.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_scl.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_scl_PM.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="Generated_Source\PSoC4\EZI2C_SCB_IRQ.c" v="-mcpu=cortex-m0plus -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D NDEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Os" />
+<name_val_pair name="E:\weiwancheng\E300-77\two\NewMCU\Workspace01\test2.cydsn\CortexM0p\ARM_GCC_541\Release\test2.hex" v="-mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0plusgcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Os -ffat-lto-objects" />
+<name_val_pair name="C:\Users\Administrator\Desktop\NewMCU_NewFilm\Workspace01\test2.cydsn\CortexM0p\ARM_GCC_541\Release\test2.hex" v="-mcpu=cortex-m0plus -mthumb -L Generated_Source\PSoC4 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC4\cm0plusgcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Os -ffat-lto-objects" />
+</name>
 </genericCmdLineData>
-<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\Administrator\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\test2.cyprj -d CY8C4125LQI-S433 -s E:\weiwancheng\E300-77\two\44444\Workspace01\test2.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
+<codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\Administrator\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\Administrator\Desktop\NewMCU_NewFilm\Workspace01\test2.cydsn\test2.cyprj -d CY8C4125LQA-S433 -s C:\Users\Administrator\Desktop\NewMCU_NewFilm\Workspace01\test2.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
 </CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
 </dataGuid>
 <dataGuid v="597c5b74-0c46-4204-8b7f-96f3570671dc">
 <CyGuid_597c5b74-0c46-4204-8b7f-96f3570671dc type_name="CyDesigner.Common.ProjMgmt.DeviceSelector.CyDeviceSelectorState" version="1">
+<name_val_pair name="Dialog Bounds" v="320, 131, 800, 598" />
+<name_val_pair name="Column Order" v="PartNumber;CPU;Family;Series;PACKAGE;SPEED_MHZ;FLASH_KB;SRAM_KB;EEPROM_KB;IO_COUNT;CAPSENSE;INDSENSE;BLUETOOTH;DIRDRIVELCD;I2S;SMIF;TIMERCOUNTERPWM_COUNT;BT_COUNT;I2C_COUNT;UDB_COUNT;PRECONFIGURED_BLOCKS;USB_TYPE;CAN20B_COUNT;PVT_COMPLEX_ADC;DAC8_COUNT;DAC12_COUNT;SAMPLEHOLD_COUNT;OPAMP_COUNT;ANALOGBLOCKS_COUNT;ADCCHANNEL_COUNT;LPCOMP_COUNT;DFB_COUNT;DMACHANNELS_COUNT;DSTCCHANNELS_COUNT;PLL_COUNT;BOOSTCONVERTER_VOLTS;MFT_COUNT;MFS_COUNT;CRYPTO;POWER_MODES;PVT_DIGITAL_IN_VOLT_RANGE;PVT_ANALOG_IN_VOLT_RANGE;TEMPMIN_CELSIUS;TEMPMAX_CELSIUS;AUTOMOTIVE_QUALIFIED;TRACEBUFF_KB;SILICONID;DesignFits;" />
 <name_val_pair name="Filter Options" v="Series:PSoC 4100S;" />
+<name_val_pair name="Visible Columns" v="PartNumber;CPU;Series;PACKAGE;SPEED_MHZ;FLASH_KB;SRAM_KB;EEPROM_KB;IO_COUNT;CAPSENSE;INDSENSE;BLUETOOTH;DIRDRIVELCD;I2S;SMIF;TIMERCOUNTERPWM_COUNT;BT_COUNT;I2C_COUNT;UDB_COUNT;PRECONFIGURED_BLOCKS;USB_TYPE;CAN20B_COUNT;PVT_COMPLEX_ADC;DAC8_COUNT;DAC12_COUNT;SAMPLEHOLD_COUNT;OPAMP_COUNT;ANALOGBLOCKS_COUNT;ADCCHANNEL_COUNT;LPCOMP_COUNT;DFB_COUNT;DMACHANNELS_COUNT;DSTCCHANNELS_COUNT;PLL_COUNT;BOOSTCONVERTER_VOLTS;MFT_COUNT;MFS_COUNT;CRYPTO;POWER_MODES;PVT_DIGITAL_IN_VOLT_RANGE;PVT_ANALOG_IN_VOLT_RANGE;TEMPMIN_CELSIUS;TEMPMAX_CELSIUS;AUTOMOTIVE_QUALIFIED;TRACEBUFF_KB;SILICONID;" />
+<name_val_pair name="Sort" v="" />
 </CyGuid_597c5b74-0c46-4204-8b7f-96f3570671dc>
 </dataGuid>
 <dataGuid v="925cc1e1-309e-4e08-b0a1-09a83c35b157">
 <CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtProjectPSoCExe+CyCodeGenDepUserInfo" version="1">
 <deps_list>
 <v>.\TopDesign\TopDesign.cysch</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.cysym</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\tuner.dll</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.dll</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.cystate</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.pdf</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\version.cypatch</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\CapSense_P4_v6_0.cysch</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Control.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Processing.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Structure.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Tuner.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Filter.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Sensing.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Control.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Filter.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Processing.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Sensing.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Structure.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Tuner.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Configuration.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_INT.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSD_LL.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSD_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSX_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSX_LL.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_RegisterMap.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Centroid_LL.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Centroid_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Adc.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Adc.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Adc_INT.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSXRv_LL.s</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSXGnu_LL.S</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSXIar_LL.s</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SmartSense_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdcStructure.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdcStructure.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SelfTest.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SelfTest.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AlpFilter_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdaptiveFilter_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdvancedCentroid_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Gesture.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Gesture.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingISX_LL.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingISX_LL.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_GCC.a</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_GCCp.a</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_IAR.a</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_IARp.a</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_MDK.a</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_MDKp.a</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.cysym</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\tuner.dll</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.dll</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.cystate</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\CapSense_P4_v6_0.pdf</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\version.cypatch</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\CapSense_P4_v6_0.cysch</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Control.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Processing.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Structure.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Tuner.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Filter.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Sensing.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Control.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Filter.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Processing.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Sensing.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Structure.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Tuner.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Configuration.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_INT.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSD_LL.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSD_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSX_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSX_LL.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_RegisterMap.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Centroid_LL.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Centroid_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Adc.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Adc.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Adc_INT.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSXRv_LL.s</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSXGnu_LL.S</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingCSXIar_LL.s</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SmartSense_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdcStructure.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdcStructure.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SelfTest.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SelfTest.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AlpFilter_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdaptiveFilter_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_AdvancedCentroid_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Gesture.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_Gesture.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingISX_LL.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\API\CapSense_SensingISX_LL.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_GCC.a</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_GCCp.a</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_IAR.a</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_IARp.a</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_MDK.a</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\CapSense_P4_v6_0\PSoC4\Library\Capsense_P4Library_MDKp.a</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.primitive</v>
@@ -827,33 +1395,33 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_m0s8_scb_v2_0\cy_m0s8_scb_v2_0.cysym</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_m0s8_scb_v2_0\PSoC4\cy_m0s8_scb_v2_0.cyprimitive</v>
 <v>.\test2.cydwr</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cm0gcc.ld</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\Cm0RealView.scat</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\Cm0Start.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0_psoc4.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyBootAsmRv.s</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyFlash.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyFlash.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyLib.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyLib.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cyPm.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cyPm.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cytypes.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cyutils.c</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cypins.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cmFunc.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cmInstr.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\Cm0Iar.icf</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyBootAsmIar.s</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cmsis_armcc.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cmsis_gcc.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0plus.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0plus_psoc4.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cmsis_compiler.h</v>
-<v>C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyBootAsmGnu.s</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Em_EEPROM_Dynamic_v2_20\API\cy_em_eeprom.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cm0gcc.ld</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\Cm0RealView.scat</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\Cm0Start.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0_psoc4.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyBootAsmRv.s</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyFlash.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyFlash.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyLib.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyLib.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cyPm.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cyPm.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cytypes.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cyutils.c</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cypins.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cmFunc.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cmInstr.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\Cm0Iar.icf</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyBootAsmIar.s</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cmsis_armcc.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cmsis_gcc.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0plus.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\core_cm0plus_psoc4.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\cmsis_compiler.h</v>
+<v>..\..\..\..\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\cy_boot_v5_80\PSoC4\API\CyBootAsmGnu.s</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_lfclk_v1_20\PSoC4\API\CyLFClk.c</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_lfclk_v1_20\PSoC4\API\CyLFClk.h</v>
 </deps_list>
@@ -995,7 +1563,7 @@
 <v>D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif</v>
 <v>D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 </warp_dep>
-<deps_time v="132229183974073856" />
+<deps_time v="132340849539059830" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1006,6 +1574,7 @@
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
 <name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM0p" v="132229184015076201" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Release@CortexM0p" v="132340849588232642" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

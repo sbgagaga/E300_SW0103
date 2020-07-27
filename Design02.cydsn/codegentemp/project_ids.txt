@@ -1,9 +1,9 @@
-E:\weiwancheng\E300-77\two\66666\Workspace01\Design01.cydsn\Design01.cyprj|fe56ee5d-8282-4cec-8a69-0fdefcc6ea02
-D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|503ef55d-8ade-4918-806a-4e9dca62f2f5
-C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|dab8a922-c574-49f9-b538-d17f6e8f1983
-D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|83e817eb-d4bd-4a63-b745-dabfe1a2c559
-D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|6035f0cd-306c-44a5-b46e-d8718f88ef01
-D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|5e40bd6e-1e72-4fa7-8286-383d931b3397
-E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj|cdff30e5-0a4b-40e6-9d18-2e0bf1b0d396
-E:\weiwancheng\E300-77\two\66666\Workspace01\test1.cydsn\test1.cyprj|75c57125-824c-4830-864b-a6b291520461
-E:\weiwancheng\E300-77\two\66666\Workspace01\test2.cydsn\test2.cyprj|31f65b58-33be-43e2-adba-260e83cca31f
+E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design01.cydsn\Design01.cyprj|d2afe332-87db-462b-ac38-a7d5aae0e668
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|85b1a0f9-d39d-43e4-a30e-941076915f09
+C:\Users\Administrator\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|6a126c7d-c163-455f-9680-bebffe8b9e69
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a504c3a9-ddd8-4588-8d80-cd2fc7d969da
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d1fc8588-3172-47f4-bcd2-aeed0cfdc51e
+D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|58eb5487-5385-4311-8d66-384889b8caad
+E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj|e8b64d04-5d73-473b-b34b-3c3ccb6cb618
+E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\test1.cydsn\test1.cyprj|91250909-b67a-493c-9f7f-10634d8fe3c9
+E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\test2.cydsn\test2.cyprj|5b42f2a3-b197-491d-a893-deef31891f4f

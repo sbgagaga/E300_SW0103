@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 1s.555ms
+Loading plugins phase: Elapsed time ==> 0s.155ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -d CY8C4125LQI-S433 -s E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -d CY8C4125LQA-S433 -s E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 14s.270ms
+Elaboration phase: Elapsed time ==> 2s.090ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.059ms
+HDL generation phase: Elapsed time ==> 0s.064ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -25,23 +25,23 @@ HDL generation phase: Elapsed time ==> 0s.059ms
 ======================================================================
 Compiling:  Design02.v
 Program  :   D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 Design02.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 Design02.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  Design02.v
 Program  :   D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 Design02.v -verilog
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 Design02.v -verilog
 ======================================================================
 
 ======================================================================
 Compiling:  Design02.v
 Program  :   vlogfe
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 -verilog Design02.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 -verilog Design02.v
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Mar 17 13:45:58 2020
+Sat Jul 25 09:02:49 2020
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 Design02.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Mar 17 13:45:59 2020
+Sat Jul 25 09:02:49 2020
 
 Flattening file 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
 Flattening file 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'
@@ -83,11 +83,11 @@ vlogfe:  No errors.
 ======================================================================
 Compiling:  Design02.v
 Program  :   tovif
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 -verilog Design02.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 -verilog Design02.v
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Mar 17 13:45:59 2020
+Sat Jul 25 09:02:49 2020
 
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -98,9 +98,9 @@ Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpk
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\codegentemp\Design02.ctl'.
+Linking 'E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\codegentemp\Design02.ctl'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
-Linking 'E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\codegentemp\Design02.v'.
+Linking 'E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\codegentemp\Design02.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Bus_Connect_v2_50\Bus_Connect_v2_50.v'.
@@ -114,11 +114,11 @@ tovif:  No errors.
 ======================================================================
 Compiling:  Design02.v
 Program  :   topld
-Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 -verilog Design02.v
+Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 -verilog Design02.v
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Mar 17 13:45:59 2020
+Sat Jul 25 09:02:50 2020
 
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -129,9 +129,9 @@ Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpk
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_cnst.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
-Linking 'E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\codegentemp\Design02.ctl'.
+Linking 'E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\codegentemp\Design02.ctl'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
-Linking 'E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\codegentemp\Design02.v'.
+Linking 'E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\codegentemp\Design02.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\or_v1_0\or_v1_0.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v'.
 Linking 'D:\cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Bus_Connect_v2_50\Bus_Connect_v2_50.v'.
@@ -316,16 +316,16 @@ topld:  No errors.
 
 CYPRESS_DIR    : D:\cypress\PSoC Creator\4.2\PSoC Creator\warp
 Warp Program   : D:\cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
-Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 Design02.v -verilog
+Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -dcpsoc3 Design02.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 1s.659ms
+Warp synthesis phase: Elapsed time ==> 1s.041ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Tuesday, 17 March 2020 13:46:00
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Design02.cyprj -d CY8C4125LQI-S433 Design02.v -verilog
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Saturday, 25 July 2020 09:02:50
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Design02.cyprj -d CY8C4125LQA-S433 Design02.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.025ms
+Design parsing phase: Elapsed time ==> 0s.024ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -1055,8 +1055,8 @@ SAR ADC                       :    1 :    0 :    1 : 100.00 %
 DAC                           :      :      :      :        
   7-bit IDAC                  :    2 :    0 :    2 : 100.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.025ms
-Tech Mapping phase: Elapsed time ==> 0s.033ms
+Technology Mapping: Elapsed time ==> 0s.029ms
+Tech Mapping phase: Elapsed time ==> 0s.040ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -1091,15 +1091,15 @@ ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.1282520s
+Elapsed time ==> 0.1178436s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.357ms
+Analog Placement phase: Elapsed time ==> 0s.270ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0049778 secs
+Route success=True, Iterations=1 Elapsed=0.0042370 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.007ms
+Analog Routing phase: Elapsed time ==> 0s.006ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1184,11 +1184,11 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.016ms
+Analog Code Generation phase: Elapsed time ==> 0s.026ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 0.3 sec.
+I2076: Total run-time: 0.1 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1202,7 +1202,7 @@ PLD Packing: Elapsed time ==> 0s.001ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.019ms
+Partitioning: Elapsed time ==> 0s.009ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -2134,8 +2134,8 @@ Port | Pin | Fixed |      Type |       Drive Mode |                 Name | Conne
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.020ms
-Digital Placement phase: Elapsed time ==> 0s.620ms
+Digital component placer commit/Report: Elapsed time ==> 0s.022ms
+Digital Placement phase: Elapsed time ==> 0s.245ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "D:\cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "D:\cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4/10/route_arch-rrg.cydata" --vh2-path "Design02_r.vh2" --pcf-path "Design02.pco" --des-name "Design02" --dsf-path "Design02.dsf"
@@ -2143,24 +2143,24 @@ Routing successful.
 Digital Routing phase: Elapsed time ==> 0s.289ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.206ms
+Bitstream Generation phase: Elapsed time ==> 0s.111ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.003ms
+Bitstream Verification phase: Elapsed time ==> 0s.002ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
-No timing parameter file available for CY8C4125LQI-S433
-Static timing analysis phase: Elapsed time ==> 0s.000ms
+No timing parameter file available for CY8C4125LQA-S433
+Static timing analysis phase: Elapsed time ==> 0s.001ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.148ms
+Design database save phase: Elapsed time ==> 0s.145ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 1s.719ms
+cydsfit: Elapsed time ==> 1s.172ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 1s.720ms
-API generation phase: Elapsed time ==> 3s.599ms
-Dependency generation phase: Elapsed time ==> 0s.032ms
-Cleanup phase: Elapsed time ==> 0s.000ms
+Fitter phase: Elapsed time ==> 1s.173ms
+API generation phase: Elapsed time ==> 2s.313ms
+Dependency generation phase: Elapsed time ==> 0s.010ms
+Cleanup phase: Elapsed time ==> 0s.001ms

@@ -20,8 +20,10 @@ uint8 Diag_flag;
 BUFFTER_TYPE RX_Buffer={128,0,Diag_Revbuf};
 BUFFTER_TYPE TX_Buffer={128,0,Diag_Sendbuf};
 
-const uint8 SW_DID_FF00[10]={"SW0103    "};
+const uint8 SW_DID_FF00[10]={"SW0104    "};
 const uint8 HW_DID_FF01[10]={"HW02      "};
+const uint8 NEW_SW_DID[10]={"SW0113    "};
+const uint8 NEW_HW_DID[10]={"HW04      "};
 CapSense_1_RAM_WD_BUTTON_STRUCT* CapSense_WD_Pointer=(CapSense_1_RAM_WD_BUTTON_STRUCT*)&CapSense_1_dsRam.wdgtList;
 CapSense_1_RAM_SNS_STRUCT*       CapSense_SNS_Pointer=(CapSense_1_RAM_SNS_STRUCT*)&CapSense_1_dsRam.snsList;
 
@@ -104,6 +106,12 @@ void LIN_SID22(uint16 DID)
         break;
         case 0xFF01:
         FillInBuffer(&TX_Buffer,(uint8 *)HW_DID_FF01,10);
+        break;
+        case 0xFF02://真实软件版本号
+        FillInBuffer(&TX_Buffer,(uint8 *)NEW_SW_DID,10);
+        break;
+        case 0xFF03://真实硬件版本号
+        FillInBuffer(&TX_Buffer,(uint8 *)NEW_HW_DID,10);
         break;
     }
 }

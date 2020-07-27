@@ -1524,6 +1524,14 @@
 <name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Debug@CortexM0p@Linker@Command Line@Command Line" v="--semihosting" />
 <name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Debug@CortexM0p@User Commands@General@Pre Build Commands" v="" />
 <name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Debug@CortexM0p@User Commands@General@Post Build Commands" v="" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@General@Output Directory" v="${ProjectDir}\${ProcessorType}\${Platform}\${Config}" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@Assembly@Command Line@Command Line" v="-s+ -M&lt;&gt; -w+ -r -DNDEBUG --fpu None" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@C/C++@General@Preprocessor Definitions" v="-D NDEBUG -D CY_CORE_ID=0" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@C/C++@Command Line@Command Line" v="-D NDEBUG -D CY_CORE_ID=0 --debug --endian=little -e --fpu=None --no_wrap_diagnostics" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@Library Generation@Command Line@Command Line" v="" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@Linker@Command Line@Command Line" v="--semihosting" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@User Commands@General@Pre Build Commands" v="" />
+<name_val_pair name="e9305a93-d091-4da5-bdc7-2813049dcdbf@Release@CortexM0p@User Commands@General@Post Build Commands" v="" />
 </name>
 </platform>
 </platforms>
@@ -1536,7 +1544,7 @@
 </CyGuid_49cfd574-032a-4a64-b7be-d4eeeaf25e43>
 </CyGuid_60697ce6-dce2-4816-8680-4de0635742eb>
 <top_block v="TopDesign" />
-<selected_device v="CY8C4125LQI-S433" />
+<selected_device v="CY8C4125LQA-S433" />
 <CyGuid_495451fe-d201-4d01-b22d-5d3f5609ac37 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtComponentMgrSerialize" version="4" xml_contents_version="1">
 <library_deps>
 <library_dep persistent="${CyRoot}\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj" />

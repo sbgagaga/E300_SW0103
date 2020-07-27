@@ -54,6 +54,11 @@ uint16 KeyThreshold[KeyNum]={129,43,73,61,196,187};
 
 uint16 SDA_cnt;
 
+uint8 ADC_Lock=0;
+
+uint8 MechAllFreeFlag=0;
+uint8 MechAllFreeCnt=0;
+
 void Apply()
 {
     if(DEF_TICK_2mS == 1)
@@ -190,7 +195,7 @@ void TouchKeyScan()
                     {
                         if(touch_lin.Date[i]==2)
                         {
-                            touch_lin.Date[i]=half_press;
+                            touch_lin.Date[i]=short_press;
                             TouchKey_State[i][0]=1;
                             break;
                         }
@@ -227,9 +232,19 @@ void MechKeyScan()
     Mute=Mute_in_Read();
     VolReduce=VolReduce_in_Read();
 
-    MechKeyPro(VolPlus,&VolPlus_cnt,&VolPlus_lock,&mech_lin.Lin.VolPlus,0);
-    MechKeyPro(Mute,&Mute_cnt,&Mute_lock,&mech_lin.Lin.Mute,1);
-    MechKeyPro(VolReduce,&VolReduce_cnt,&VolReduce_lock,&mech_lin.Lin.VolReduce,2);
+    if(MechAllFreeFlag)
+    {
+        MechKeyPro(VolPlus,&VolPlus_cnt,&VolPlus_lock,&mech_lin.Lin.VolPlus,0);
+        MechKeyPro(Mute,&Mute_cnt,&Mute_lock,&mech_lin.Lin.Mute,1);
+        MechKeyPro(VolReduce,&VolReduce_cnt,&VolReduce_lock,&mech_lin.Lin.VolReduce,2);
+    }
+    else
+    {
+        if(VolPlus&&Mute&&VolReduce)
+        {
+            MechAllFreeFlag=1;
+        }
+    }
 }
 
 void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 index)
@@ -258,7 +273,7 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
         {
             if(*KeyLIN!=error)
             {
-                *KeyLIN=half_press;
+                *KeyLIN=short_press;
                 MechKey_State[index][0]=1;
             }
             else
@@ -330,12 +345,16 @@ void Key_Free()
         if(TouchKey_State[i][0]==1)
         {
             TouchKey_State[i][1]++;
-            if(TouchKey_State[i][1]>75)
+            if(TouchKey_State[i][1]>25&&TouchKey_State[i][1]<100)
+            {
+                touch_lin.Date[i]=half_press;
+            }
+            else if(TouchKey_State[i][1]>=100)
             {
                 TouchKey_State[i][0]=0;
                 TouchKey_State[i][1]=0;
-                touch_lin.Date[i]=no_press;
                 TouchKeyLock=0;
+                touch_lin.Date[i]=no_press;
             }
         }
     }
@@ -344,11 +363,15 @@ void Key_Free()
         if(MechKey_State[i][0]==1)
         {
             MechKey_State[i][1]++;
-            if(MechKey_State[i][1]>75)
+            if(MechKey_State[i][1]>25&&MechKey_State[i][1]<100)
             {
+                mech_lin.Date[i]=half_press;
+            }
+            else if(MechKey_State[i][1]>=100)
+            {
+                mech_lin.Date[i]=no_press;
                 MechKey_State[i][0]=0;
                 MechKey_State[i][1]=0;
-                mech_lin.Date[i]=no_press;
                 switch(i)
                 {
                     case 0:VolPlus_lock=0;break;
@@ -397,6 +420,7 @@ void KEY_Clean()
 
 void I2C_Date_Pro()
 {
+    uint8 CheckSum=0;
     int i=0;
     for(i=0;i<6;i++)
     {
@@ -406,15 +430,20 @@ void I2C_Date_Pro()
     {
         I2CWriteBuf[i]=mech_lin.Date[i-6];
     }
+    for(int i=0;i<10;i++)
+    {
+        CheckSum+=I2CWriteBuf[i];
+    }
+    I2CWriteBuf[10]=CheckSum^0xFF;
     for(i=0;i<6;i++)
     {
-        I2CWriteBuf[i*2+10]=CapSense_SNS_Pointer[i].bsln[0]>>8;
-        I2CWriteBuf[i*2+1+10]=(uint8)(CapSense_SNS_Pointer[i].bsln[0]);
+        I2CWriteBuf[i*2+11]=CapSense_SNS_Pointer[i].bsln[0]>>8;
+        I2CWriteBuf[i*2+1+11]=(uint8)(CapSense_SNS_Pointer[i].bsln[0]);
     }
     for(i=0;i<6;i++)
     {
-        I2CWriteBuf[i*2+22]=CapSense_SNS_Pointer[i].diff>>8;
-        I2CWriteBuf[i*2+1+22]=(uint8)CapSense_SNS_Pointer[i].diff;
+        I2CWriteBuf[i*2+23]=CapSense_SNS_Pointer[i].diff>>8;
+        I2CWriteBuf[i*2+1+23]=(uint8)CapSense_SNS_Pointer[i].diff;
     }
     while(ReadCommand(addr,0x00)==addr)
     {
@@ -424,13 +453,8 @@ void I2C_Date_Pro()
             addr=0x44;
         }
     }
-    I2CWriteBuf[34]=ReadCommand(addr,0x03);
-    I2CWriteBuf[35]=ReadCommand(addr,0x04);
-    for(i=0;i<6;i++)
-    {
-        I2CWriteBuf[i*2+36]=KeyThreshold[i]>>8;
-        I2CWriteBuf[i*2+1+36]=(uint8)KeyThreshold[i];
-    }
+    I2CWriteBuf[35]=ReadCommand(addr,0x03);
+    I2CWriteBuf[36]=ReadCommand(addr,0x04);
 }
 
 void I2C_task()
@@ -455,38 +479,79 @@ void ADC_Check()
     {
         ADC_Value=ADC_SAR_Seq_1_GetResult16(0);
        
-        if(ADC_Value>Vol_18)
+        if(ADC_Value>=Vol_17)
         {
-            I2CWriteBuf[ADC_index]=0x01;
             PowerMode = 1;
-            flagSystemON=0;
-            varPowerUpCount=0;
         }
-        else if(ADC_Value>Vol_16P5&&ADC_Value<Vol_17P5)
+        else if(ADC_Value>=Vol_16P5&&ADC_Value<Vol_17)
         {
-            I2CWriteBuf[ADC_index]=0x02;
-            flagSystemON=0;
-            varPowerUpCount=0;
             PowerMode = 2;
         }
-        else if(ADC_Value>Vol_9&&ADC_Value<Vol_16)
+        else if(ADC_Value>=Vol_16&&ADC_Value<Vol_16P5)
         {
-            I2CWriteBuf[ADC_index]=0;
+            if(PowerMode==0)
+            {
+                PowerMode=0;
+            }
+            else
+            {
+                PowerMode=2;
+            }
+        }
+        else if(ADC_Value>=Vol_9&&ADC_Value<Vol_16)
+        {
             PowerMode = 0;
+        }
+        else if(ADC_Value>=Vol_8P5&&ADC_Value<Vol_9)
+        {
+            if(PowerMode==0)
+            {
+                PowerMode=0;
+            }
+            else
+            {
+                PowerMode=3;
+            }
         }
         else if(ADC_Value>=Vol_6P5&&ADC_Value<Vol_8P5)
         {
-            I2CWriteBuf[ADC_index]=0x03;
-            flagSystemON=0;
-            varPowerUpCount=0;
             PowerMode = 3;
+        }
+        else if(ADC_Value>=Vol_6&&ADC_Value<Vol_6P5)
+        {
+            if(PowerMode==1)
+            {
+                PowerMode=1;
+            }
+            else
+            {
+                PowerMode=3;
+            }
         }
         else if(ADC_Value<Vol_6)
         {
-            I2CWriteBuf[ADC_index]=0x01;
             PowerMode = 1;
+        }
+        switch(PowerMode)
+        {
+            case 0:
+            I2CWriteBuf[ADC_index]=0;
+            break;
+            case 1:
+            I2CWriteBuf[ADC_index]=1;
+            break;
+            case 2:
+            I2CWriteBuf[ADC_index]=2;
+            break;
+            case 3:
+            I2CWriteBuf[ADC_index]=3;
+            break;
+        }
+        if(PowerMode!=0)
+        {
             flagSystemON=0;
             varPowerUpCount=0;
+            MechAllFreeFlag=0;
         }
     }
 }

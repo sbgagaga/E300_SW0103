@@ -674,13 +674,13 @@ typedef uint16 CapSense_1_THRESHOLD_TYPE;
 * Answer initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_1_ANSWER_RESOLUTION            (CapSense_1_RES11BIT)
-#define CapSense_1_ANSWER_FINGER_TH             (60u)
-#define CapSense_1_ANSWER_NOISE_TH              (30u)
-#define CapSense_1_ANSWER_NNOISE_TH             (15u)
+#define CapSense_1_ANSWER_FINGER_TH             (100u)
+#define CapSense_1_ANSWER_NOISE_TH              (50u)
+#define CapSense_1_ANSWER_NNOISE_TH             (25u)
 #define CapSense_1_ANSWER_HYSTERESIS            (10u)
 #define CapSense_1_ANSWER_ON_DEBOUNCE           (3u)
 #define CapSense_1_ANSWER_LOW_BSLN_RST          (30u)
-#define CapSense_1_ANSWER_IDAC_MOD0             (15u)
+#define CapSense_1_ANSWER_IDAC_MOD0             (13u)
 #define CapSense_1_ANSWER_SNS_CLK               (8u)
 #define CapSense_1_ANSWER_SNS_CLK_SOURCE        (0u)
 
@@ -694,13 +694,13 @@ typedef uint16 CapSense_1_THRESHOLD_TYPE;
 * Menu initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_1_MENU_RESOLUTION              (CapSense_1_RES11BIT)
-#define CapSense_1_MENU_FINGER_TH               (60u)
-#define CapSense_1_MENU_NOISE_TH                (30u)
-#define CapSense_1_MENU_NNOISE_TH               (15u)
+#define CapSense_1_MENU_FINGER_TH               (80u)
+#define CapSense_1_MENU_NOISE_TH                (40u)
+#define CapSense_1_MENU_NNOISE_TH               (20u)
 #define CapSense_1_MENU_HYSTERESIS              (10u)
 #define CapSense_1_MENU_ON_DEBOUNCE             (3u)
 #define CapSense_1_MENU_LOW_BSLN_RST            (30u)
-#define CapSense_1_MENU_IDAC_MOD0               (24u)
+#define CapSense_1_MENU_IDAC_MOD0               (19u)
 #define CapSense_1_MENU_SNS_CLK                 (8u)
 #define CapSense_1_MENU_SNS_CLK_SOURCE          (0u)
 
@@ -720,7 +720,7 @@ typedef uint16 CapSense_1_THRESHOLD_TYPE;
 #define CapSense_1_MODE_HYSTERESIS              (10u)
 #define CapSense_1_MODE_ON_DEBOUNCE             (3u)
 #define CapSense_1_MODE_LOW_BSLN_RST            (30u)
-#define CapSense_1_MODE_IDAC_MOD0               (13u)
+#define CapSense_1_MODE_IDAC_MOD0               (15u)
 #define CapSense_1_MODE_SNS_CLK                 (8u)
 #define CapSense_1_MODE_SNS_CLK_SOURCE          (0u)
 
@@ -734,13 +734,13 @@ typedef uint16 CapSense_1_THRESHOLD_TYPE;
 * Speech initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_1_SPEECH_RESOLUTION            (CapSense_1_RES11BIT)
-#define CapSense_1_SPEECH_FINGER_TH             (60u)
-#define CapSense_1_SPEECH_NOISE_TH              (30u)
-#define CapSense_1_SPEECH_NNOISE_TH             (15u)
+#define CapSense_1_SPEECH_FINGER_TH             (80u)
+#define CapSense_1_SPEECH_NOISE_TH              (40u)
+#define CapSense_1_SPEECH_NNOISE_TH             (20u)
 #define CapSense_1_SPEECH_HYSTERESIS            (10u)
 #define CapSense_1_SPEECH_ON_DEBOUNCE           (3u)
 #define CapSense_1_SPEECH_LOW_BSLN_RST          (30u)
-#define CapSense_1_SPEECH_IDAC_MOD0             (25u)
+#define CapSense_1_SPEECH_IDAC_MOD0             (17u)
 #define CapSense_1_SPEECH_SNS_CLK               (8u)
 #define CapSense_1_SPEECH_SNS_CLK_SOURCE        (0u)
 
@@ -754,9 +754,9 @@ typedef uint16 CapSense_1_THRESHOLD_TYPE;
 * DIST initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_1_DIST_RESOLUTION              (CapSense_1_RES11BIT)
-#define CapSense_1_DIST_FINGER_TH               (60u)
-#define CapSense_1_DIST_NOISE_TH                (30u)
-#define CapSense_1_DIST_NNOISE_TH               (15u)
+#define CapSense_1_DIST_FINGER_TH               (8000u)
+#define CapSense_1_DIST_NOISE_TH                (40u)
+#define CapSense_1_DIST_NNOISE_TH               (20u)
 #define CapSense_1_DIST_HYSTERESIS              (10u)
 #define CapSense_1_DIST_ON_DEBOUNCE             (3u)
 #define CapSense_1_DIST_LOW_BSLN_RST            (30u)
@@ -774,23 +774,23 @@ typedef uint16 CapSense_1_THRESHOLD_TYPE;
 * ADAS initialization values for RAM data structure
 *******************************************************************************/
 #define CapSense_1_ADAS_RESOLUTION              (CapSense_1_RES11BIT)
-#define CapSense_1_ADAS_FINGER_TH               (60u)
-#define CapSense_1_ADAS_NOISE_TH                (30u)
-#define CapSense_1_ADAS_NNOISE_TH               (15u)
+#define CapSense_1_ADAS_FINGER_TH               (8000u)
+#define CapSense_1_ADAS_NOISE_TH                (60u)
+#define CapSense_1_ADAS_NNOISE_TH               (30u)
 #define CapSense_1_ADAS_HYSTERESIS              (10u)
 #define CapSense_1_ADAS_ON_DEBOUNCE             (3u)
 #define CapSense_1_ADAS_LOW_BSLN_RST            (30u)
-#define CapSense_1_ADAS_IDAC_MOD0               (15u)
+#define CapSense_1_ADAS_IDAC_MOD0               (13u)
 #define CapSense_1_ADAS_SNS_CLK                 (8u)
 #define CapSense_1_ADAS_SNS_CLK_SOURCE          (0u)
 
 /* RAM Sensor Parameters Definitions */
-#define CapSense_1_ANSWER_SNS0_IDAC_COMP0       (15u)
-#define CapSense_1_MENU_SNS0_IDAC_COMP0         (20u)
-#define CapSense_1_MODE_SNS0_IDAC_COMP0         (15u)
-#define CapSense_1_SPEECH_SNS0_IDAC_COMP0       (15u)
-#define CapSense_1_DIST_SNS0_IDAC_COMP0         (20u)
-#define CapSense_1_ADAS_SNS0_IDAC_COMP0         (12u)
+#define CapSense_1_ANSWER_SNS0_IDAC_COMP0       (14u)
+#define CapSense_1_MENU_SNS0_IDAC_COMP0         (19u)
+#define CapSense_1_MODE_SNS0_IDAC_COMP0         (13u)
+#define CapSense_1_SPEECH_SNS0_IDAC_COMP0       (17u)
+#define CapSense_1_DIST_SNS0_IDAC_COMP0         (18u)
+#define CapSense_1_ADAS_SNS0_IDAC_COMP0         (13u)
 
 
 

@@ -35,6 +35,7 @@ uint8 SlaveBuf[I2C_LEN]={0},LastReadBuf[I2C_LEN]={0};
 
 int16 Force_Value;
 uint8 BEEP_Flag;
+uint8 BEEP_cnt;
 uint8 RepPreFlag;
 
 uint8 LowPowerFlag=1;
@@ -59,6 +60,9 @@ uint16 DeepSleep_time=1000;
 uint8 flagSystemON;
 uint16 varPowerUpCount;
 
+uint8 MechAllFreeFlag=0;
+uint8 MechAllFreeCnt=0;
+
 void Apply()
 {
     if(DEF_TICK_2mS == 1)
@@ -80,13 +84,13 @@ void Apply()
         if(flagSystemON)
         {
             TouchKeyScan();
-            MechKeyScan();
+            //MechKeyScan();
             if(KeyNumCheck())
             {
                 TouchKeyCount=0;
-                RESPlus_cnt=0;
-                Crusie_cnt=0;
-                SETReduce_cnt=0;
+                //RESPlus_cnt=0;
+                //Crusie_cnt=0;
+                //SETReduce_cnt=0;
                 //CapSense_1_InitializeAllBaselines();
             }
             Key_Free();
@@ -140,10 +144,10 @@ void TouchKeyScan()
         
         touch_key.Key.Menu=CapSense_IsWidgetActive_bit(CapSense_1_MENU_WDGT_ID);
         touch_key.Key.Mode=CapSense_IsWidgetActive_bit(CapSense_1_MODE_WDGT_ID);
-        touch_key.Key.ADAS=CapSense_IsWidgetActive_bit(CapSense_1_ADAS_WDGT_ID);
+        //touch_key.Key.ADAS=CapSense_IsWidgetActive_bit(CapSense_1_ADAS_WDGT_ID);
         touch_key.Key.Answer=CapSense_IsWidgetActive_bit(CapSense_1_ANSWER_WDGT_ID);
         touch_key.Key.Speech=CapSense_IsWidgetActive_bit(CapSense_1_SPEECH_WDGT_ID);
-        touch_key.Key.DIST=CapSense_IsWidgetActive_bit(CapSense_1_DIST_WDGT_ID);
+        //touch_key.Key.DIST=CapSense_IsWidgetActive_bit(CapSense_1_DIST_WDGT_ID);
         
         if(SignalCheck())
         {
@@ -193,7 +197,7 @@ void TouchKeyScan()
                     {
                         if(touch_lin.Date[i]==2)
                         {
-                            touch_lin.Date[i]=half_press;
+                            touch_lin.Date[i]=short_press;
                             TouchKey_State[i][0]=1;
                             break;
                         }
@@ -231,9 +235,19 @@ void MechKeyScan()
     Crusie=Crusie_in_Read();
     SETReduce=SETReduce_in_Read();
     
-    MechKeyPro(RESPlus,&RESPlus_cnt,&RESPlus_lock,&mech_lin.Lin.RESPlus,0);
-    MechKeyPro(Crusie,&Crusie_cnt,&Crusie_lock,&mech_lin.Lin.Crusie,1);
-    MechKeyPro(SETReduce,&SETReduce_cnt,&SETReduce_lock,&mech_lin.Lin.SETReduce,2);
+    if(MechAllFreeFlag)
+    {
+        MechKeyPro(RESPlus,&RESPlus_cnt,&RESPlus_lock,&mech_lin.Lin.RESPlus,0);
+        MechKeyPro(Crusie,&Crusie_cnt,&Crusie_lock,&mech_lin.Lin.Crusie,1);
+        MechKeyPro(SETReduce,&SETReduce_cnt,&SETReduce_lock,&mech_lin.Lin.SETReduce,2);
+    }
+    else
+    {
+        if(RESPlus&&Crusie&&SETReduce)
+        {
+            MechAllFreeFlag=1;
+        }
+    }
 }
 
 void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 index)
@@ -263,7 +277,7 @@ void MechKeyPro(uint8 KeyType,uint16 *KeyCnt,uint8 *KeyLock,uint8 *KeyLIN,uint8 
         {
             if(*KeyLIN!=error)
             {
-                *KeyLIN=half_press;
+                *KeyLIN=short_press;
                 MechKey_State[index][0]=1;
             }
             else
@@ -304,18 +318,18 @@ uint8 KeyNumCheck()
             KeySum++;
         }
     }
-    if(!RESPlus)
-    {
-        KeySum++;
-    }
-    if(!Crusie)
-    {
-        KeySum++;
-    }
-    if(!SETReduce)
-    {
-        KeySum++;
-    }
+//    if(!RESPlus)
+//    {
+//        KeySum++;
+//    }
+//    if(!Crusie)
+//    {
+//        KeySum++;
+//    }
+//    if(!SETReduce)
+//    {
+//        KeySum++;
+//    }
     if(KeySum>=2) 
     {
         RepPreFlag=1;
@@ -370,12 +384,16 @@ void Key_Free()
         if(TouchKey_State[i][0]==1)
         {
             TouchKey_State[i][1]++;
-            if(TouchKey_State[i][1]>75)
+            if(TouchKey_State[i][1]>25&&TouchKey_State[i][1]<100)
+            {
+                touch_lin.Date[i]=half_press;
+            }
+            else if(TouchKey_State[i][1]>=100)
             {
                 TouchKey_State[i][0]=0;
                 TouchKey_State[i][1]=0;
-                touch_lin.Date[i]=no_press;
                 TouchKeyLock=0;
+                touch_lin.Date[i]=no_press;
             }
         }
     }
@@ -384,7 +402,11 @@ void Key_Free()
         if(MechKey_State[i][0]==1)
         {
             MechKey_State[i][1]++;
-            if(MechKey_State[i][1]>75)
+            if(MechKey_State[i][1]>25&&MechKey_State[i][1]<100)
+            {
+                mech_lin.Date[i]=half_press;
+            }
+            else if(MechKey_State[i][1]>=100)
             {
                 MechKey_State[i][0]=0;
                 MechKey_State[i][1]=0;
@@ -402,8 +424,8 @@ void Key_Free()
 
 void I2C_task()
 {
-    uint8 I2C_temp,KeySum=0; 
-    static uint8 same_flag,beep_flag;
+    uint8 I2C_temp=0,KeySum=0,CheckSum=0; 
+    static uint8 same_flag,beep_flag,cnt;
     
     I2C_1_I2CMasterClearStatus();
     if(I2C_1_I2C_MSTR_NO_ERROR==I2C_1_I2CMasterReadBuf(I2C_Slave_dress, I2CReadBuf, I2C_LEN,
@@ -430,12 +452,25 @@ void I2C_task()
                 {
                     same_flag=0;
                     beep_flag=0;
+                    cnt=0;
                     break;
                 }
                 same_flag=1;
             }
+            for(int i=0;i<10;i++)
+            {
+                CheckSum+=I2CReadBuf[i];
+            }
+            CheckSum^=0XFF;
+            if(CheckSum!=I2CReadBuf[10])
+            {
+                same_flag=0;
+                cnt=0;
+                //beep_flag=0;
+            }
             if(same_flag)
             {
+                cnt=0;
                 for(uint8 i=0;i<10;i++)
                 {
                     SlaveBuf[i]=LastReadBuf[i];
@@ -456,6 +491,7 @@ void I2C_task()
                 {
                     flagSystemON=0;
                     varPowerUpCount=0;
+                    MechAllFreeFlag=0;
                 }
                 else if(SlaveBuf[9]==1)
                 {
@@ -463,6 +499,7 @@ void I2C_task()
                     PowerLock=0;
                     flagSystemON=0;
                     varPowerUpCount=0;
+                    MechAllFreeFlag=0;
                 }
                 if(SlaveBuf[9]==0||SlaveBuf[9]==2||SlaveBuf[9]==3)
                 {
@@ -470,19 +507,15 @@ void I2C_task()
                 }
                 for(int i=0;i<12;i++)//基线值
                 {
-                    baseline[i]=I2CReadBuf[10+i];
+                    baseline[i]=I2CReadBuf[11+i];
                 }
                 for(int i=0;i<12;i++)//信号值
                 {
-                    signline[i]=I2CReadBuf[22+i];
+                    signline[i]=I2CReadBuf[23+i];
                 }
                 for(int i=0;i<2;i++)//压力值
                 {
-                    SlavePressValue[i]=I2CReadBuf[34+i];
-                }
-                for(int i=0;i<12;i++)
-                {
-                    SlavePressThrValue[i]=I2CReadBuf[36+i];
+                    SlavePressValue[i]=I2CReadBuf[35+i];
                 }
             }
             for(uint8 i=0;i<10;i++)
@@ -520,7 +553,6 @@ void LIN_task()
 
 void Beep_EN()
 {
-    static uint8 BEEP_cnt;
     if(BEEP_Flag)
     {
         PWM_BEEP_WriteCompare(250);
@@ -572,6 +604,9 @@ void SleepMode()
 {
     if(sleep_flag)
     {
+        BEEP_cnt=0;
+        BEEP_Flag=0;
+        PWM_BEEP_WriteCompare(0);
         PWM_BEEP_Stop();
         I2C_1_Stop();
         CapSense_1_Stop();
@@ -579,6 +614,8 @@ void SleepMode()
         sleep_flag=0;
         CySysWdtClearInterrupt();
         CySysWdtDisable();
+        //CySysWdtWriteMatch(CySysWdtReadMatch() + iloMatchCounts);
+        
         LIN_EN_Write(0);
         LIN_1_SCB_rx_Sleep();
         LIN_1_SCB_tx_Sleep();
@@ -613,6 +650,7 @@ void SleepMode()
 void LINRx()
 {
     DeepSleep_time=1000;
+    //flagSystemON=1;
     CyIntClearPending(0);
     LIN_1_SCB_rx_ClearInterrupt();
     LIN_1_SCB_tx_ClearInterrupt();

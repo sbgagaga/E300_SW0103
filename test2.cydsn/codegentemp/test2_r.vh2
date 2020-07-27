@@ -1,13 +1,13 @@
 -- Project:   test2
--- Generated: 01/08/2020 08:53:15
+-- Generated: 05/16/2020 14:42:30
 -- PSoC Creator  4.2
 
 ENTITY test2 IS
     PORT(
         \EZI2C:sda(0)_PAD\ : INOUT std_ulogic;
         \EZI2C:scl(0)_PAD\ : INOUT std_ulogic);
-    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
 END test2;
 

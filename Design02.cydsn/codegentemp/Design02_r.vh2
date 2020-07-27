@@ -1,5 +1,5 @@
 -- Project:   Design02
--- Generated: 03/17/2020 13:46:01
+-- Generated: 07/25/2020 09:02:50
 -- PSoC Creator  4.2
 
 ENTITY Design02 IS
@@ -11,8 +11,8 @@ ENTITY Design02 IS
         VolPlus_in(0)_PAD : IN std_ulogic;
         Mute_in(0)_PAD : IN std_ulogic;
         VolReduce_in(0)_PAD : IN std_ulogic);
-    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
 END Design02;
 

@@ -40,7 +40,6 @@
 <v>Workspace01\Design01\Source Files\I2C.c</v>
 <v>Workspace01\Design01\Source Files\I2C.h</v>
 <v>Workspace01\Design01\Source Files\main.c</v>
-<v>Workspace01\Design01\Generated_Source\PSoC4</v>
 <v>Workspace01\Design01\Generated_Source\PSoC4\I2C_1_scl</v>
 <v>Workspace01\Design02</v>
 <v>Workspace01\Design02\TopDesign</v>
@@ -65,7 +64,6 @@
 <v>Workspace01\Design02\Source Files\main.c</v>
 <v>Workspace01\Design02\Generated_Source\PSoC4</v>
 <v>Workspace01\test1\TopDesign</v>
-<v>Workspace01\test1\test1.cydwr</v>
 <v>Workspace01\test1\test1.cydwr\Pins</v>
 <v>Workspace01\test1\test1.cydwr\Analog</v>
 <v>Workspace01\test1\test1.cydwr\Clocks</v>
@@ -245,6 +243,7 @@
 <v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\SETReduce_in_PM.lst</v>
 <v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\Timer_1.lst</v>
 <v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\Timer_1_PM.lst</v>
+<v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Listing Files\WdtIsr.lst</v>
 <v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.elf</v>
 <v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.hex</v>
 <v>Workspace01\Design01\CortexM0p\ARM_GCC_541\Debug\Design01.map</v>
@@ -521,6 +520,39 @@
 <v>Workspace01\test1\CortexM0p\ARM_GCC_541\Debug\test1.hex</v>
 <v>Workspace01\test1\CortexM0p\ARM_GCC_541\Debug\test1.map</v>
 <v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Control.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Filter.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_INT.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_ISR.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Processing.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Sensing.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_SensingCSD_LL.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Structure.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Tuner.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\Cm0plusStart.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CyFlash.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CyLFClk.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\CyLib.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\cymetadata.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\cyPm.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\cyutils.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_BOOT.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_EZI2C.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_EZI2C_BOOT.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_EZI2C_INT.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_PM.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_SCB_IRQ.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_SCBCLK.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_scl.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_scl_PM.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_sda.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_sda_PM.lst</v>
+<v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\Listing Files\main.lst</v>
 <v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\test1.elf</v>
 <v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\test1.hex</v>
 <v>Workspace01\test1\CortexM0p\ARM_GCC_541\Release\test1.map</v>
@@ -567,6 +599,43 @@
 <v>Workspace01\test2\CortexM0p\ARM_GCC_541\Debug\test2.elf</v>
 <v>Workspace01\test2\CortexM0p\ARM_GCC_541\Debug\test2.hex</v>
 <v>Workspace01\test2\CortexM0p\ARM_GCC_541\Debug\test2.map</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Control.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Filter.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_INT.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_ISR.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Processing.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Sensing.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_SensingCSD_LL.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Structure.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CapSense_Tuner.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\Cm0plusStart.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\cy_em_eeprom.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CyBootAsmGnu.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\cyfitter_cfg.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CyFlash.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CyLFClk.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\CyLib.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\cymetadata.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\cyPm.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\cyutils.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_BOOT.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_EZI2C.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_EZI2C_BOOT.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_EZI2C_INT.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_PM.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_SCB_IRQ.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_SCBCLK.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_scl.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_scl_PM.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_sda.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\EZI2C_sda_PM.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\Listing Files\main.lst</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\test2.elf</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\test2.hex</v>
+<v>Workspace01\test2\CortexM0p\ARM_GCC_541\Release\test2.map</v>
 <v>Workspace01\test2\test2.gpdsc</v>
 <v>Workspace01\test2\test2.rpt</v>
 <v>Workspace01\test2\test2_timing.html</v>
@@ -722,6 +791,7 @@
 <OpenDocs>
 <name v=".\Design01.cydsn\Apply.c" />
 <name v=".\Design02.cydsn\Apply.c" />
+<name v=".\Design01.cydsn\diagnose.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -729,7 +799,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1029, 460" SelectedTabbedMdiWindow="1a751043-eef0-44e0-b81f-d7f5f8ecfc29"><DocumentWindow Key="E:\weiwancheng\E300-77\two\66666\Workspace01\Design01.cydsn\Apply.c" Guid="0d417503-2dfd-4ea1-b368-d73eb320c044" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b6a0e652-4b77-4ced-9e9f-d96f0ec040e2" /><DocumentWindow Key="E:\weiwancheng\E300-77\two\66666\Workspace01\Design02.cydsn\Apply.c" Guid="1a751043-eef0-44e0-b81f-d7f5f8ecfc29" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="929, 524" SelectedTabbedMdiWindow="b5bbe7f3-8ab2-4d76-943b-19d05f5a2b75"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b6a0e652-4b77-4ced-9e9f-d96f0ec040e2" /><DocumentWindow Key="E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design01.cydsn\Apply.c" Guid="b5a9b9f8-fc5a-4cd1-8b38-30584f8a8e54" /><DocumentWindow Key="E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design02.cydsn\Apply.c" Guid="aa6733ad-777c-4685-ae7d-a498e43e4ed5" /><DocumentWindow Key="E:\weiwancheng\E300-77\three\NewMCU_NewFilm_NewSignal_NewFun\Workspace01\Design01.cydsn\diagnose.c" Guid="b5bbe7f3-8ab2-4d76-943b-19d05f5a2b75" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="Release" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

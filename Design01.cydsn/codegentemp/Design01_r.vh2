@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 03/20/2020 09:29:03
+-- Generated: 07/25/2020 09:02:17
 -- PSoC Creator  4.2
 
 ENTITY Design01 IS
@@ -13,8 +13,8 @@ ENTITY Design01 IS
         RESPlus_in(0)_PAD : IN std_ulogic;
         Crusie_in(0)_PAD : IN std_ulogic;
         SETReduce_in(0)_PAD : IN std_ulogic);
-    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
 END Design01;
 

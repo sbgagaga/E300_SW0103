@@ -78,7 +78,7 @@ typedef union
 #define half_press      1
 #define no_press        0
 #define I2C_Slave_dress 0x08
-#define I2C_LEN         48
+#define I2C_LEN         37
 
 #define RestReg         0x0F
 #define Rest            0x01
@@ -94,6 +94,8 @@ extern uint8 LowPowerFlag;
 extern uint8 PowerLock;
 extern uint16 DeepSleep_time;
 extern uint8 BEEP_Flag;
+extern uint8 flagSystemON;
+extern uint16 varPowerUpCount;
 
 
 void TouchKeyScan();

@@ -90,6 +90,8 @@ void Lin_Init()
 void wdt_isr()
 {
     CySysWdtClearInterrupt();
+    flagSystemON=0;
+    varPowerUpCount=225;
 }
 
 /* [] END OF FILE */
